@@ -1,0 +1,2052 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Suhaim",
+      "email": "suhaim@example.com",
+      "password": "123456"
+    },
+    {
+      "id": "053d",
+      "name": "messi",
+      "email": "ney@gmail.com",
+      "password": "pass",
+      "Confirmpassword": "pass"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "title": "Classic Denim Jacket",
+      "price": 59.99,
+      "originalPrice": 79.99,
+      "brand": "Levi's",
+      "description": "Timeless denim jacket with a relaxed fit and button closures.",
+      "detailedDescription": "Crafted from premium 12-ounce denim, this jacket features a classic trucker silhouette with a slightly relaxed fit for comfort. The durable metal buttons and reinforced stitching ensure long-lasting wear. Perfect for layering in spring or fall. Machine washable with minimal shrinkage.",
+      "features": [
+        "100% Cotton denim",
+        "Metal button closures",
+        "Chest flap pockets",
+        "Regular fit",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-photo/young-man-posing-with-copy-space_23-2148422206.jpg?ga=GA1.1.214547797.1744994752&semt=ais_hybrid&w=740",
+      "stock": 12,
+      "sold": 38,
+      "category": "Jackets",
+      "rating": 4.5
+    },
+    {
+      "id": "2",
+      "title": "Slim Fit Chinos",
+      "price": 39.99,
+      "originalPrice": 49.99,
+      "brand": "H&M",
+      "description": "Comfortable slim fit chinos for casual and formal wear.",
+      "detailedDescription": "These versatile chinos feature a modern slim fit through the seat and thigh with a tapered leg. Made from stretch cotton twill for all-day comfort. The hidden zip fly and button closure provide a clean look. Ideal for both office wear and weekend outings.",
+      "features": [
+        "98% Cotton, 2% Elastane",
+        "Slim fit tailoring",
+        "Zip fly with button",
+        "Machine wash cold",
+        "Wrinkle-resistant"
+      ],
+      "image": "https://img.freepik.com/free-photo/men-s-ankle-sneakers-white-street-style-apparel-shoot_53876-119733.jpg?ga=GA1.1.214547797.1744994752&semt=ais_hybrid&w=740",
+      "stock": 30,
+      "sold": 22,
+      "category": "Pants",
+      "rating": 4.2
+    },
+    {
+      "id": "3",
+      "title": "Cotton Graphic T-Shirt",
+      "price": 19.99,
+      "originalPrice": 24.99,
+      "brand": "Zara",
+      "description": "Soft cotton t-shirt with a bold front graphic.",
+      "detailedDescription": "This lightweight tee is made from 100% combed cotton for exceptional softness. The vibrant graphic print is screen-printed for durability. Features a classic crew neck and short sleeves. Pre-shrunk fabric maintains shape after washing.",
+      "features": [
+        "100% Premium cotton",
+        "Screen-printed design",
+        "Crew neckline",
+        "Pre-shrunk fabric",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-photo/smiling-young-pretty-caucasian-girl-sun-glasses-with-headphones-around-neck-thumbs-up-isolated-olive-green-wall-with-copy-space_141793-118978.jpg?ga=GA1.1.214547797.1744994752&semt=ais_hybrid&w=740",
+      "stock": 50,
+      "sold": 76,
+      "category": "T-Shirts",
+      "rating": 4.7
+    },
+    {
+      "id": "4",
+      "title": "Women's Trench Coat",
+      "price": 89.99,
+      "originalPrice": 129.99,
+      "brand": "Mango",
+      "description": "Elegant long trench coat with belted waist and classic lapels.",
+      "detailedDescription": "This knee-length trench coat features a timeless double-breasted design with a self-tie belt to accentuate your waist. Made from water-resistant polyester-cotton blend with a smooth lining. The storm flap and buttoned cuffs add sophisticated detailing.",
+      "features": [
+        "65% Polyester, 35% Cotton",
+        "Water-resistant finish",
+        "Removable belt",
+        "Functional button cuffs",
+        "Dry clean only"
+      ],
+      "image": "https://img.freepik.com/free-photo/young-beautiful-business-woman-isolated-studio_1303-20564.jpg?ga=GA1.1.214547797.1744994752&semt=ais_hybrid&w=740",
+      "stock": 8,
+      "sold": 14,
+      "category": "Coats",
+      "rating": 4.8
+    },
+    {
+      "id": "5",
+      "title": "Running Sneakers",
+      "price": 74.99,
+      "originalPrice": 89.99,
+      "brand": "Nike",
+      "description": "Lightweight running shoes designed for performance and comfort.",
+      "detailedDescription": "Engineered for runners, these sneakers feature responsive cushioning and a breathable mesh upper. The rubber outsole provides excellent traction on various surfaces. The padded collar and tongue offer enhanced comfort during long runs.",
+      "features": [
+        "Breathable mesh upper",
+        "Phylon midsole cushioning",
+        "Durable rubber outsole",
+        "Padded collar",
+        "True to size fit"
+      ],
+      "image": "https://img.freepik.com/premium-photo/woman-wearing-pink-sneakers-running-stadium_392895-14782.jpg?ga=GA1.1.214547797.1744994752&semt=ais_hybrid&w=740",
+      "stock": 25,
+      "sold": 54,
+      "category": "Shoes",
+      "rating": 4.6
+    },
+    {
+      "id": "6",
+      "title": "Floral Summer Dress",
+      "price": 44.99,
+      "originalPrice": 59.99,
+      "brand": "Forever 21",
+      "description": "Bright floral dress perfect for summer outings and vacations.",
+      "detailedDescription": "This A-line dress features a vibrant floral print on lightweight chiffon fabric. The smocked bodice and elasticated waist provide a flattering fit, while the flowy skirt offers effortless movement. Perfect for beach cover-ups or brunch dates.",
+      "features": [
+        "100% Chiffon",
+        "Smocked bodice",
+        "Elastic waistband",
+        "Machine wash gentle",
+        "Semi-sheer lining"
+      ],
+      "image": "https://img.freepik.com/premium-photo/young-caucasian-female-floral-dress-posing-by-waterfall_1325173-21071.jpg?ga=GA1.1.214547797.1744994752&semt=ais_hybrid&w=740",
+      "stock": 16,
+      "sold": 29,
+      "category": "Dresses",
+      "rating": 4.3
+    },
+    {
+      "id": "7",
+      "title": "Men's Hoodie",
+      "price": 34.99,
+      "originalPrice": 49.99,
+      "brand": "Adidas",
+      "description": "Cozy pullover hoodie with front pocket and logo print.",
+      "detailedDescription": "This classic hoodie is made from soft cotton-polyester fleece with a brushed interior for warmth. Features a kangaroo pocket, adjustable drawstring hood, and ribbed cuffs/hem. The iconic brand logo is screen-printed on the chest.",
+      "features": [
+        "80% Cotton, 20% Polyester",
+        "Brushed interior fleece",
+        "Kangaroo pocket",
+        "Adjustable hood",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/premium-photo/mysterious-man-hoodie_963476-10736.jpg?ga=GA1.1.214547797.1744994752&semt=ais_hybrid&w=740",
+      "stock": 22,
+      "sold": 41,
+      "category": "Hoodies",
+      "rating": 4.4
+    },
+    {
+      "id": "8",
+      "title": "Men's Slim Fit Denim Jacket",
+      "price": 64.99,
+      "originalPrice": 84.99,
+      "brand": "Levi's",
+      "description": "Classic blue denim jacket with stretch technology for comfort.",
+      "detailedDescription": "This updated denim jacket features added stretch for enhanced mobility while maintaining the iconic Levi's look. The slim fit design sits close to the body without restricting movement. Includes chest pockets and adjustable waist tabs.",
+      "features": [
+        "98% Cotton, 2% Elastane",
+        "Slim fit silhouette",
+        "Stretch denim",
+        "Adjustable waist tabs",
+        "Machine wash cold"
+      ],
+      "image": "https://img.freepik.com/free-photo/cowboy-portrait-daylight-with-out-focus-landscape-background_23-2151455411.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 18,
+      "sold": 45,
+      "category": "Jackets",
+      "audience": "men",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Blue",
+        "Black"
+      ],
+      "rating": 4.7
+    },
+    {
+      "id": "9",
+      "title": "Men's Oxford Button-Down Shirt",
+      "price": 44.99,
+      "originalPrice": 59.99,
+      "brand": "J.Crew",
+      "description": "Crisp cotton oxford shirt with button-down collar.",
+      "detailedDescription": "Made from premium oxford cloth, this shirt features a classic button-down collar and single-needle stitching throughout. The slightly tapered fit provides a modern silhouette that works equally well with suits or jeans.",
+      "features": [
+        "100% Cotton oxford",
+        "Button-down collar",
+        "Single-needle stitching",
+        "Mother-of-pearl buttons",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-photo/portrait-indigenous-businessman_23-2151201361.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 32,
+      "sold": 28,
+      "category": "Shirts",
+      "audience": "men",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "White",
+        "Blue",
+        "Gray"
+      ],
+      "rating": 4.9
+    },
+    {
+      "id": "10",
+      "title": "Men's Slim Fit Chinos",
+      "price": 49.99,
+      "originalPrice": 69.99,
+      "brand": "Bonobos",
+      "description": "Stretch cotton chinos with tapered leg.",
+      "detailedDescription": "These performance chinos combine the polished look of dress pants with the comfort of activewear. The stretch cotton fabric moves with you while resisting wrinkles. The tapered leg creates a streamlined silhouette.",
+      "features": [
+        "94% Cotton, 6% Spandex",
+        "Wrinkle-resistant",
+        "Tapered leg opening",
+        "Hidden stretch waistband",
+        "Machine wash cold"
+      ],
+      "image": "https://img.freepik.com/premium-photo/hd-8k-wallpaper-stock-photographic-image_853645-27117.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 25,
+      "sold": 36,
+      "category": "Pants",
+      "audience": "men",
+      "sizes": [
+        "28x30",
+        "30x30",
+        "32x30",
+        "34x30"
+      ],
+      "colors": [
+        "Khaki",
+        "Navy",
+        "Gray"
+      ],
+      "rating": 4.5
+    },
+    {
+      "id": "11",
+      "title": "Men's Running Sneakers",
+      "price": 79.99,
+      "originalPrice": 99.99,
+      "brand": "Nike",
+      "description": "Lightweight running shoes with responsive cushioning.",
+      "detailedDescription": "Engineered for speed and comfort, these running shoes feature responsive foam cushioning that absorbs impact while providing energy return. The breathable mesh upper keeps feet cool during intense workouts.",
+      "features": [
+        "Breathable mesh upper",
+        "Responsive foam midsole",
+        "Durable rubber outsole",
+        "Cushioned collar and tongue",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-photo/close-up-person-wearing-futuristic-sneakers_23-2151005652.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 14,
+      "sold": 52,
+      "category": "Shoes",
+      "audience": "men",
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "colors": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "rating": 4.7
+    },
+    {
+      "id": "12",
+      "title": "Men's Leather Belt",
+      "price": 34.99,
+      "originalPrice": 49.99,
+      "brand": "Allen Edmonds",
+      "description": "Genuine leather belt with polished buckle.",
+      "detailedDescription": "Crafted from full-grain leather, this dress belt features a polished brass buckle that won't tarnish. The leather develops a rich patina over time while maintaining its strength and durability.",
+      "features": [
+        "Full-grain leather",
+        "Polished brass buckle",
+        "Reinforced stitching",
+        "Adjustable sizing",
+        "Lifetime leather conditioning"
+      ],
+      "image": "https://img.freepik.com/premium-photo/arafed-man-blue-shirt-tan-pants-with-watch_1035446-17910.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 42,
+      "sold": 38,
+      "category": "Accessories",
+      "audience": "men",
+      "sizes": [
+        "32",
+        "34",
+        "36",
+        "38"
+      ],
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "rating": 4.4
+    },
+    {
+      "id": "13",
+      "title": "Men's Crewneck Sweater",
+      "price": 59.99,
+      "originalPrice": 79.99,
+      "brand": "Banana Republic",
+      "description": "Soft merino wool sweater for layering.",
+      "detailedDescription": "This premium merino wool sweater provides exceptional warmth without bulk. The natural fibers regulate temperature and resist odors, making it ideal for travel and everyday wear.",
+      "features": [
+        "100% merino wool",
+        "Reinforced shoulder seams",
+        "Layering-friendly fit",
+        "Machine wash cold",
+        "Resists wrinkles and odors"
+      ],
+      "image": "https://img.freepik.com/free-photo/men-fashion-editorial-outdoors_23-2151905314.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 21,
+      "sold": 29,
+      "category": "Sweaters",
+      "audience": "men",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Navy",
+        "Gray",
+        "Camel"
+      ],
+      "rating": 4.6
+    },
+    {
+      "id": "14",
+      "title": "Men's Swim Trunks",
+      "price": 29.99,
+      "originalPrice": 39.99,
+      "brand": "Patagonia",
+      "description": "Quick-drying swim shorts with liner.",
+      "detailedDescription": "Made from recycled materials, these sustainable swim trunks feature a quick-drying fabric that sheds water in seconds. The built-in mesh liner provides support and comfort.",
+      "features": [
+        "Made from recycled nylon",
+        "UPF 50+ sun protection",
+        "Self-draining pockets",
+        "Adjustable waistband",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-photo/male-model-black-sportswear-posing_23-2151982087.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 36,
+      "sold": 47,
+      "category": "Swimwear",
+      "audience": "men",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Navy",
+        "Teal",
+        "Red"
+      ],
+      "rating": 4.3
+    },
+    {
+      "id": "15",
+      "title": "Men's Aviator Sunglasses",
+      "price": 89.99,
+      "originalPrice": 129.99,
+      "brand": "Ray-Ban",
+      "description": "Classic aviator style with UV protection.",
+      "detailedDescription": "The iconic aviator design features precision-ground and polished lenses that eliminate distortion. 100% UV protection shields eyes from harmful rays while the lightweight frame ensures all-day comfort.",
+      "features": [
+        "100% UV protection",
+        "Crystal-clear lenses",
+        "Lightweight metal frame",
+        "Adjustable nose pads",
+        "Includes hard case"
+      ],
+      "image": "https://img.freepik.com/free-photo/fashionable-retrofuturism-portrait_23-2151940215.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 28,
+      "sold": 41,
+      "category": "Accessories",
+      "audience": "men",
+      "colors": [
+        "Gold",
+        "Silver"
+      ],
+      "rating": 4.8
+    },
+    {
+      "id": "16",
+      "title": "Men's Gym Shorts",
+      "price": 24.99,
+      "originalPrice": 34.99,
+      "brand": "Under Armour",
+      "description": "Breathable athletic shorts with moisture-wicking fabric.",
+      "detailedDescription": "Designed for high-intensity training, these shorts feature Under Armour's signature moisture-wicking technology that keeps you dry. The built-in liner provides support without restricting movement.",
+      "features": [
+        "4-way stretch fabric",
+        "Mesh side panels",
+        "Anti-odor technology",
+        "Elastic waistband",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-photo/model-wearing-beautiful-shade-clothing_23-2151428059.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 39,
+      "sold": 63,
+      "category": "Activewear",
+      "audience": "men",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Gray",
+        "Red"
+      ],
+      "rating": 4.5
+    },
+    {
+      "id": "17",
+      "title": "Men's Wool Coat",
+      "price": 199.99,
+      "originalPrice": 299.99,
+      "brand": "J.Crew",
+      "description": "Warm wool overcoat for winter.",
+      "detailedDescription": "This Italian-made wool coat features a refined silhouette with notch lapels and a half-belt back. The wool-cashmere blend provides exceptional warmth while remaining breathable.",
+      "features": [
+        "80% wool, 20% cashmere",
+        "Notch lapel collar",
+        "Inner storm placket",
+        "Flap pockets",
+        "Dry clean only"
+      ],
+      "image": "https://img.freepik.com/free-photo/men-fashion-editorial-outdoors_23-2151905305.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 8,
+      "sold": 12,
+      "category": "Outerwear",
+      "audience": "men",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Camel",
+        "Black"
+      ],
+      "rating": 4.9
+    },
+    {
+      "id": "18",
+      "title": "Men's Dress Shoes",
+      "price": 129.99,
+      "originalPrice": 179.99,
+      "brand": "Cole Haan",
+      "description": "Oxford dress shoes with cushioned soles.",
+      "detailedDescription": "These premium oxfords combine traditional styling with modern comfort technology. The cushioned insole and flexible outsole provide all-day comfort while maintaining a polished appearance.",
+      "features": [
+        "Full-grain leather upper",
+        "Cushioned footbed",
+        "Flexible rubber sole",
+        "Goodyear welt construction",
+        "Includes shoe bags"
+      ],
+      "image": "https://img.freepik.com/premium-photo/grooms-shoes-isolated_1042628-536936.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 11,
+      "sold": 19,
+      "category": "Shoes",
+      "audience": "men",
+      "sizes": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "colors": [
+        "Black",
+        "Brown"
+      ],
+      "rating": 4.7
+    },
+    {
+      "id": "19",
+      "title": "Men's Graphic T-Shirt",
+      "price": 19.99,
+      "originalPrice": 24.99,
+      "brand": "Uniqlo",
+      "description": "Soft cotton tee with vintage band print.",
+      "detailedDescription": "Made from premium jersey cotton, this graphic tee features a vintage-inspired print that won't crack or fade. The relaxed fit provides comfort while maintaining a stylish silhouette.",
+      "features": [
+        "100% premium cotton",
+        "Screen-printed design",
+        "Reinforced shoulder seams",
+        "Tagless label",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/premium-photo/picture-depicting-man-black-oversized-tshirt-sweatpants-standing-car-park_900706-61181.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 54,
+      "sold": 87,
+      "category": "T-Shirts",
+      "audience": "men",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "White",
+        "Black",
+        "Gray"
+      ],
+      "rating": 4.2
+    },
+    {
+      "id": "20",
+      "title": "Men's Cashmere Scarf",
+      "price": 49.99,
+      "originalPrice": 79.99,
+      "brand": "Johnstons of Elgin",
+      "description": "Luxury cashmere scarf in herringbone pattern.",
+      "detailedDescription": "Handcrafted in Scotland from 100% pure cashmere, this scarf features a traditional herringbone weave that provides exceptional warmth while remaining lightweight.",
+      "features": [
+        "100% pure cashmere",
+        "Hand-finished edges",
+        "Generous length",
+        "Herringbone weave",
+        "Dry clean recommended"
+      ],
+      "image": "https://img.freepik.com/premium-photo/handsome-man-standing-winter-park_1356031-6278.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 23,
+      "sold": 31,
+      "category": "Accessories",
+      "audience": "men",
+      "colors": [
+        "Navy",
+        "Charcoal"
+      ],
+      "rating": 4.8
+    },
+    {
+      "id": "21",
+      "title": "Men's Leather Wallet",
+      "price": 39.99,
+      "originalPrice": 59.99,
+      "brand": "Bellroy",
+      "description": "Slim leather wallet with RFID protection.",
+      "detailedDescription": "This minimalist wallet is crafted from environmentally certified leather and features RFID-blocking technology to protect your cards from digital theft.",
+      "features": [
+        "Environmentally certified leather",
+        "RFID-blocking layer",
+        "Quick-access card slots",
+        "Coin pocket",
+        "Develops patina over time"
+      ],
+      "image": "https://img.freepik.com/premium-photo/focus-male-hands-holding-wallet_950361-20304.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 37,
+      "sold": 42,
+      "category": "Accessories",
+      "audience": "men",
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "rating": 4.6
+    },
+    {
+      "id": "22",
+      "title": "Men's Winter Gloves",
+      "price": 29.99,
+      "originalPrice": 49.99,
+      "brand": "The North Face",
+      "description": "Insulated gloves with touchscreen compatibility.",
+      "detailedDescription": "These winter gloves feature Thermolite insulation that traps body heat while allowing moisture to escape. The conductive fingertips work with touchscreens without removing the gloves.",
+      "features": [
+        "Thermolite insulation",
+        "Touchscreen-compatible fingertips",
+        "Adjustable wrist strap",
+        "Abrasion-resistant palms",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/premium-photo/pair-stylish-leather-gloves-cashmere-scarf-displayed-snowy-bench_1327465-65848.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 19,
+      "sold": 26,
+      "category": "Accessories",
+      "audience": "men",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Black",
+        "Navy"
+      ],
+      "rating": 4.4
+    },
+    {
+      "id": "23",
+      "title": "Men's Jogger Pants",
+      "price": 34.99,
+      "originalPrice": 49.99,
+      "brand": "Adidas",
+      "description": "Tapered joggers with elastic cuffs.",
+      "detailedDescription": "These performance joggers feature a tapered leg with ribbed cuffs that stay in place during activity. The moisture-wicking fabric keeps you comfortable during workouts.",
+      "features": [
+        "Tapered athletic fit",
+        "Elastic ribbed cuffs",
+        "Zippered security pocket",
+        "Moisture-wicking fabric",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/premium-photo/confident-urban-male-fashion-casual-black-jacket-pants-street-style_616001-56313.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 28,
+      "sold": 39,
+      "category": "Pants",
+      "audience": "men",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Gray",
+        "Navy"
+      ],
+      "rating": 4.3
+    },
+    {
+      "id": "24",
+      "title": "Men's Baseball Cap",
+      "price": 24.99,
+      "originalPrice": 34.99,
+      "brand": "New Era",
+      "description": "Structured cap with curved brim.",
+      "detailedDescription": "This structured cap features a curved brim and adjustable strap for a custom fit. The moisture-wicking sweatband keeps you cool and comfortable.",
+      "features": [
+        "Structured crown",
+        "Curved visor",
+        "Adjustable strap closure",
+        "Moisture-wicking sweatband",
+        "Spot clean only"
+      ],
+      "image": "https://img.freepik.com/free-photo/portrait-male-baseball-player_23-2151023645.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 45,
+      "sold": 58,
+      "category": "Accessories",
+      "audience": "men",
+      "colors": [
+        "Black",
+        "Navy",
+        "Gray"
+      ],
+      "rating": 4.1
+    },
+    {
+      "id": "25",
+      "title": "Men's Dress Socks (3-Pack)",
+      "price": 14.99,
+      "originalPrice": 19.99,
+      "brand": "Bombas",
+      "description": "Premium cotton dress socks with reinforced heels.",
+      "detailedDescription": "Engineered for comfort, these dress socks feature targeted cushioning in high-impact areas and a seamless toe to prevent irritation. For every pair purchased, Bombas donates a pair to those in need.",
+      "features": [
+        "Premium combed cotton",
+        "Reinforced heel and toe",
+        "Seamless toe construction",
+        "Arch support",
+        "Machine wash cold"
+      ],
+      "image": "https://img.freepik.com/premium-photo/black-womens-oversize-long-sleeve-light-background_1177187-77453.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 62,
+      "sold": 93,
+      "category": "Accessories",
+      "audience": "men",
+      "colors": [
+        "Black",
+        "Navy",
+        "Gray"
+      ],
+      "rating": 4.7
+    },
+    {
+      "id": "26",
+      "title": "Men's Gym Bag",
+      "price": 39.99,
+      "originalPrice": 59.99,
+      "brand": "Nike",
+      "description": "Durable duffle bag with shoe compartment.",
+      "detailedDescription": "This spacious gym duffle features a ventilated shoe compartment to keep sweaty footwear separate from clean clothes. Made from rugged polyester that resists tears and abrasions.",
+      "features": [
+        "Ventilated shoe compartment",
+        "Water-resistant base",
+        "Padded shoulder strap",
+        "Multiple interior pockets",
+        "Wipe-clean interior lining"
+      ],
+      "image": "https://img.freepik.com/premium-photo/man-with-backpack-backpack-stands-front-building_1221953-75348.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 21,
+      "sold": 34,
+      "category": "Bags",
+      "audience": "men",
+      "colors": [
+        "Black",
+        "Gray",
+        "Blue"
+      ],
+      "rating": 4.4
+    },
+    {
+      "id": "27",
+      "title": "Men's Watch",
+      "price": 149.99,
+      "originalPrice": 199.99,
+      "brand": "Timex",
+      "description": "Water-resistant watch with leather strap.",
+      "detailedDescription": "This classic field watch features a durable stainless steel case and genuine leather strap that develops a rich patina over time. The Indiglo backlight ensures readability in low light conditions.",
+      "features": [
+        "50m water resistance",
+        "Indiglo night-light",
+        "Scratch-resistant mineral crystal",
+        "Quartz movement",
+        "Adjustable leather strap"
+      ],
+      "image": "https://img.freepik.com/premium-photo/hand-gripping-leather-bag-showcases-black-wristwatch-blending-practicality-with-fashion-casual-environment_248459-61848.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 15,
+      "sold": 22,
+      "category": "Accessories",
+      "audience": "men",
+      "sizes": [
+        "Standard"
+      ],
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "rating": 4.6
+    },
+    {
+      "id": "28",
+      "title": "Women's Wrap Dress",
+      "price": 59.99,
+      "originalPrice": 79.99,
+      "brand": "Reformation",
+      "description": "Flowy midi dress with tie waist and floral print.",
+      "detailedDescription": "This sustainable wrap dress is made from Tencel lyocell that drapes beautifully while being breathable. The adjustable tie waist creates a flattering silhouette for all body types.",
+      "features": [
+        "Made from sustainable Tencel",
+        "Adjustable self-tie waist",
+        "Hidden inner snap closure",
+        "Machine wash cold",
+        "Mid-calf length"
+      ],
+      "image": "https://img.freepik.com/free-photo/fashionable-mocha-tone-portrait_23-2151914796.jpg?ga=GA1.1.214547797.1744994752&semt=ais_hybrid&w=740",
+      "stock": 22,
+      "sold": 38,
+      "category": "Dresses",
+      "audience": "women",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Floral",
+        "Black",
+        "Navy"
+      ],
+      "rating": 4.7
+    },
+    {
+      "id": "29",
+      "title": "Women's Leather Tote",
+      "price": 89.99,
+      "originalPrice": 129.99,
+      "brand": "Madewell",
+      "description": "Structured genuine leather tote with interior pockets.",
+      "detailedDescription": "Crafted from full-grain leather that softens over time, this roomy tote features interior organization including a padded laptop sleeve and multiple slip pockets for easy access to essentials.",
+      "features": [
+        "Full-grain leather",
+        "Fits 15\" laptop",
+        "Zip-top closure",
+        "12\" drop handles",
+        "Develops patina over time"
+      ],
+      "image": "https://img.freepik.com/free-photo/fashionable-mocha-tone-portrait_23-2151914796.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 12,
+      "sold": 24,
+      "category": "Bags",
+      "audience": "women",
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "rating": 4.8
+    },
+    {
+      "id": "30",
+      "title": "Women's High-Waist Jeans",
+      "price": 49.99,
+      "originalPrice": 69.99,
+      "brand": "AGOLDE",
+      "description": "Vintage-inspired jeans with raw hem.",
+      "detailedDescription": "These premium denim jeans feature a high-rise waist that smooths and supports, with a raw hem detail for an undone, modern look. The stretch fabric provides comfort without losing its shape.",
+      "features": [
+        "98% cotton, 2% elastane",
+        "10.5\" front rise",
+        "Raw hem detail",
+        "Mid-weight stretch denim",
+        "Machine wash cold"
+      ],
+      "image": "https://img.freepik.com/premium-photo/woman-sits-table-with-card-that-says-lager-it_1301701-4006.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 18,
+      "sold": 32,
+      "category": "Pants",
+      "audience": "women",
+      "sizes": [
+        "24",
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "colors": [
+        "Blue",
+        "Black"
+      ],
+      "rating": 4.5
+    },
+    {
+      "id": "31",
+      "title": "Women's Ankle Boots",
+      "price": 79.99,
+      "originalPrice": 119.99,
+      "brand": "Sam Edelman",
+      "description": "Suede ankle boots with block heel.",
+      "detailedDescription": "These versatile ankle boots feature a comfortable 2-inch block heel that provides lift without sacrificing stability. The suede upper is treated for water resistance.",
+      "features": [
+        "2\" block heel",
+        "Water-resistant suede",
+        "Padded insole",
+        "Side zip closure",
+        "Leather outsole"
+      ],
+      "image": "https://img.freepik.com/premium-photo/young-woman-sitting-steps_961875-318735.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 14,
+      "sold": 27,
+      "category": "Shoes",
+      "audience": "women",
+      "sizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "colors": [
+        "Taupe",
+        "Black"
+      ],
+      "rating": 4.6
+    },
+    {
+      "id": "32",
+      "title": "Women's Cashmere Sweater",
+      "price": 89.99,
+      "originalPrice": 149.99,
+      "brand": "Everlane",
+      "description": "Ultra-soft cashmere crewneck sweater.",
+      "detailedDescription": "Made from 100% Mongolian cashmere, this lightweight sweater provides exceptional warmth without bulk. The relaxed fit layers beautifully while resisting pilling.",
+      "features": [
+        "100% Mongolian cashmere",
+        "Reinforced shoulder seams",
+        "Resists pilling",
+        "Machine wash cold",
+        "Layering-friendly fit"
+      ],
+      "image": "https://img.freepik.com/premium-photo/female-green-sweatshirt-mockup_776894-71217.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 9,
+      "sold": 18,
+      "category": "Sweaters",
+      "audience": "women",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Cream",
+        "Pink",
+        "Gray"
+      ],
+      "rating": 4.9
+    },
+    {
+      "id": "33",
+      "title": "Women's Crossbody Bag",
+      "price": 69.99,
+      "originalPrice": 98.99,
+      "brand": "Kate Spade",
+      "description": "Compact crossbody with chain strap.",
+      "detailedDescription": "This elegant crossbody features a detachable chain strap that converts to a clutch. The structured silhouette maintains its shape while providing enough room for daily essentials.",
+      "features": [
+        "Detachable chain strap",
+        "Magnetic snap closure",
+        "Interior card slots",
+        "Gold-tone hardware",
+        "Dust bag included"
+      ],
+      "image": "https://img.freepik.com/free-photo/cherry-trending-collection_23-2151917657.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 16,
+      "sold": 29,
+      "category": "Bags",
+      "audience": "women",
+      "colors": [
+        "Black",
+        "Blush"
+      ],
+      "rating": 4.7
+    },
+    {
+      "id": "34",
+      "title": "Women's Yoga Leggings",
+      "price": 34.99,
+      "originalPrice": 54.99,
+      "brand": "Lululemon",
+      "description": "High-waisted leggings with sweat-wicking fabric.",
+      "detailedDescription": "These performance leggings feature four-way stretch fabric that moves with your body during even the most intense workouts. The high waist provides tummy control and coverage.",
+      "features": [
+        "Sweat-wicking fabric",
+        "Four-way stretch",
+        "Gusseted crotch",
+        "Hidden waistband pocket",
+        "Machine wash cold"
+      ],
+      "image": "https://img.freepik.com/premium-photo/woman-with-long-hair-is-sitting-mat-with-her-back-camera_984237-76970.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 27,
+      "sold": 53,
+      "category": "Activewear",
+      "audience": "women",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Black",
+        "Gray",
+        "Maroon"
+      ],
+      "rating": 4.8
+    },
+    {
+      "id": "35",
+      "title": "Women's Silk Blouse",
+      "price": 59.99,
+      "originalPrice": 89.99,
+      "brand": "Equipment",
+      "description": "Flowy silk blouse with French cuffs.",
+      "detailedDescription": "Made from 100% pure charmeuse silk, this elegant blouse drapes beautifully while the French cuffs allow for styling with cufflinks for a polished look.",
+      "features": [
+        "100% pure silk",
+        "French cuffs",
+        "Mother-of-pearl buttons",
+        "Flowy relaxed fit",
+        "Dry clean only"
+      ],
+      "image": "https://img.freepik.com/premium-photo/lovely-model-wearing-floral-black_961875-219687.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 13,
+      "sold": 21,
+      "category": "Tops",
+      "audience": "women",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "White",
+        "Black",
+        "Blush"
+      ],
+      "rating": 4.7
+    },
+    {
+      "id": "36",
+      "title": "Women's Wool Coat",
+      "price": 179.99,
+      "originalPrice": 249.99,
+      "brand": "Mango",
+      "description": "Double-breasted wool coat with belt.",
+      "detailedDescription": "This tailored wool coat features a notched lapel and self-tie belt that cinches at the waist for a flattering silhouette. The wool-blend fabric provides warmth without bulk.",
+      "features": [
+        "80% wool, 20% polyamide",
+        "Notched lapel collar",
+        "Inner storm placket",
+        "Flap pockets",
+        "Dry clean only"
+      ],
+      "image": "https://img.freepik.com/free-photo/cinematic-portrait-american-cowboy-west-with-hat_23-2151495626.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 7,
+      "sold": 11,
+      "category": "Outerwear",
+      "audience": "women",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Camel",
+        "Black"
+      ],
+      "rating": 4.5
+    },
+    {
+      "id": "37",
+      "title": "Women's Gold Hoop Earrings",
+      "price": 24.99,
+      "originalPrice": 34.99,
+      "brand": "BaubleBar",
+      "description": "14k gold-plated hoop earrings.",
+      "detailedDescription": "These classic hoop earrings feature a sleek gold-plated finish that resists tarnishing. The lightweight design provides all-day comfort while adding polish to any outfit.",
+      "features": [
+        "14k gold plating",
+        "Nickel-free posts",
+        "1.5\" diameter",
+        "Secure push-back closure",
+        "Includes jewelry pouch"
+      ],
+      "image": "https://img.freepik.com/free-photo/golden-elegance_23-2151934148.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 42,
+      "sold": 68,
+      "category": "Accessories",
+      "audience": "women",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Gold"
+      ],
+      "rating": 4.3
+    },
+    {
+      "id": "38",
+      "title": "Women's White Sneakers",
+      "price": 69.99,
+      "originalPrice": 89.99,
+      "brand": "Adidas",
+      "description": "Classic leather sneakers with gum sole.",
+      "detailedDescription": "These timeless sneakers feature a premium leather upper and distinctive gum rubber sole. The cushioned footbed provides all-day comfort while maintaining a sleek profile.",
+      "features": [
+        "Premium leather upper",
+        "Gum rubber outsole",
+        "OrthoLite sockliner",
+        "Perforated 3-Stripes",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-photo/close-up-white-futuristic-sneakers_23-2151005683.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 23,
+      "sold": 47,
+      "category": "Shoes",
+      "audience": "women",
+      "sizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "colors": [
+        "White"
+      ],
+      "rating": 4.6
+    },
+    {
+      "id": "39",
+      "title": "Women's Midi Skirt",
+      "price": 39.99,
+      "originalPrice": 59.99,
+      "brand": "Zara",
+      "description": "Pleated midi skirt with stretch waistband.",
+      "detailedDescription": "This elegant pleated skirt features an elasticated waistband for comfort and a midi length that hits below the knee. The fluid fabric creates beautiful movement with every step.",
+      "features": [
+        "Polyester-spandex blend",
+        "Elastic waistband",
+        "Hidden inner shorts",
+        "Machine wash cold",
+        "Mid-calf length"
+      ],
+      "image": "https://img.freepik.com/premium-photo/midshot-38-year-old-middleaged-woman-with-straight-black-hair-wearing-skirt-good-skin_148840-62552.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 19,
+      "sold": 26,
+      "category": "Skirts",
+      "audience": "women",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Black",
+        "Plaid",
+        "Navy"
+      ],
+      "rating": 4.2
+    },
+    {
+      "id": "40",
+      "title": "Women's Denim Jacket",
+      "price": 54.99,
+      "originalPrice": 79.99,
+      "brand": "Madewell",
+      "description": "Classic cropped denim jacket.",
+      "detailedDescription": "This vintage-inspired denim jacket features a slightly cropped silhouette that pairs perfectly with high-waisted bottoms. The non-stretch denim softens beautifully with wear.",
+      "features": [
+        "100% cotton denim",
+        "Cropped fit",
+        "Button-front closure",
+        "Chest pockets",
+        "Machine wash cold"
+      ],
+      "image": "https://img.freepik.com/free-photo/cowboy-portrait-daylight-with-out-focus-landscape-background_23-2151455422.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 16,
+      "sold": 29,
+      "category": "Jackets",
+      "audience": "women",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Blue",
+        "Black"
+      ],
+      "rating": 4.4
+    },
+    {
+      "id": "41",
+      "title": "Women's Silk Scarf",
+      "price": 34.99,
+      "originalPrice": 59.99,
+      "brand": "Hermès",
+      "description": "Signature silk twill scarf.",
+      "detailedDescription": "This iconic 90cm square scarf is crafted from 100% silk twill and features hand-rolled edges. The vibrant print is created using up to 45 different screens for exceptional color depth.",
+      "features": [
+        "100% silk twill",
+        "Hand-rolled edges",
+        "90cm square size",
+        "Screen-printed design",
+        "Dry clean only"
+      ],
+      "image": "https://img.freepik.com/premium-photo/woman-with-scarf-elegant-sophisticated-stylish_1087582-26223.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 28,
+      "sold": 39,
+      "category": "Accessories",
+      "audience": "women",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Multicolor"
+      ],
+      "rating": 4.8
+    },
+    {
+      "id": "42",
+      "title": "Women's Bralette",
+      "price": 19.99,
+      "originalPrice": 29.99,
+      "brand": "Aerie",
+      "description": "Lace bralette with adjustable straps.",
+      "detailedDescription": "This wireless bralette provides light support with its stretchy lace fabric and adjustable straps. The soft elastic band prevents digging while the seamless design remains invisible under clothing.",
+      "features": [
+        "95% nylon, 5% spandex",
+        "Adjustable straps",
+        "Wire-free design",
+        "Hook-and-eye back closure",
+        "Machine wash cold"
+      ],
+      "image": "https://img.freepik.com/free-photo/woman-posing-with-sportswear_23-2151982101.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 37,
+      "sold": 62,
+      "category": "Activewear",
+      "audience": "women",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Nude",
+        "Black",
+        "Blush"
+      ],
+      "rating": 4.5
+    },
+    {
+      "id": "43",
+      "title": "Women's Leather Belt",
+      "price": 29.99,
+      "originalPrice": 49.99,
+      "brand": "Coach",
+      "description": "Slim leather belt with signature buckle.",
+      "detailedDescription": "This 1/2\" wide belt features Coach's signature turnlock buckle and is crafted from supple glove-tanned leather that develops a rich patina over time. The five hole adjustment ensures a perfect fit.",
+      "features": [
+        "Genuine leather",
+        "Signature turnlock buckle",
+        "1/2\" width",
+        "Five adjustment holes",
+        "Includes dust bag"
+      ],
+      "image": "https://img.freepik.com/premium-photo/cropped-shot-woman-standing-with-her-hand-her-pocket_762026-61341.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 24,
+      "sold": 31,
+      "category": "Accessories",
+      "audience": "women",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "rating": 4.6
+    },
+    {
+      "id": "44",
+      "title": "Women's Wide-Leg Pants",
+      "price": 49.99,
+      "originalPrice": 79.99,
+      "brand": "Anthropologie",
+      "description": "High-waisted linen blend pants.",
+      "detailedDescription": "These breezy wide-leg pants feature a high-rise waist that elongates the legs and a linen-blend fabric that resists wrinkling while remaining breathable. The side pockets add functionality.",
+      "features": [
+        "55% linen, 45% cotton",
+        "12\" front rise",
+        "Hidden side pockets",
+        "Wide-leg silhouette",
+        "Machine wash cold"
+      ],
+      "image": "https://img.freepik.com/premium-photo/woman-with-necklace-sitting-floor-with-door-her_990370-1020.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 14,
+      "sold": 19,
+      "category": "Pants",
+      "audience": "women",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Beige",
+        "Black"
+      ],
+      "rating": 4.4
+    },
+    {
+      "id": "45",
+      "title": "Women's Straw Hat",
+      "price": 39.99,
+      "originalPrice": 59.99,
+      "brand": "Eugenia Kim",
+      "description": "Wide-brim straw hat with black band.",
+      "detailedDescription": "This stylish sun hat features a 3\" brim that provides UPF 50+ sun protection. The natural straw is handwoven and the interior sweatband ensures comfortable all-day wear.",
+      "features": [
+        "UPF 50+ protection",
+        "3\" wide brim",
+        "Adjustable interior band",
+        "Handwoven straw",
+        "Spot clean only"
+      ],
+      "image": "https://img.freepik.com/free-photo/cinematic-portrait-american-cowboy-west-with-hat_23-2151495627.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 21,
+      "sold": 27,
+      "category": "Accessories",
+      "audience": "women",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Natural"
+      ],
+      "rating": 4.3
+    },
+    {
+      "id": "46",
+      "title": "Women's Turtleneck Sweater",
+      "price": 44.99,
+      "originalPrice": 69.99,
+      "brand": "Uniqlo",
+      "description": "Fine-knit merino wool turtleneck.",
+      "detailedDescription": "This lightweight merino wool sweater features a snug turtleneck collar that provides extra warmth without bulk. The fine gauge knit creates a polished look that layers beautifully under jackets.",
+      "features": [
+        "100% merino wool",
+        "Fine 18-gauge knit",
+        "Fitted turtleneck collar",
+        "Slim fit",
+        "Machine wash cold"
+      ],
+      "image": "https://img.freepik.com/premium-photo/woman-wearing-red-sweater-with-red-sweater-it_1221953-56676.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 17,
+      "sold": 23,
+      "category": "Sweaters",
+      "audience": "women",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Black",
+        "Camel",
+        "Gray"
+      ],
+      "rating": 4.7
+    },
+    {
+      "id": "47",
+      "title": "Women's Leather Backpack",
+      "price": 129.99,
+      "originalPrice": 199.99,
+      "brand": "Fjällräven",
+      "description": "Compact leather backpack with laptop sleeve.",
+      "detailedDescription": "This versatile backpack features vegetable-tanned leather that develops a unique patina over time. The padded 15\" laptop compartment and multiple pockets keep essentials organized.",
+      "features": [
+        "Vegetable-tanned leather",
+        "Fits 15\" laptop",
+        "Adjustable shoulder straps",
+        "Front zip pocket",
+        "Waxed canvas lining"
+      ],
+      "image": "https://img.freepik.com/premium-photo/woman-walks-down-street-wearing-brown-leather-bag_1013581-791.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 9,
+      "sold": 14,
+      "category": "Bags",
+      "audience": "women",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "rating": 4.5
+    },
+    {
+      "id": "48",
+      "title": "Kids' Dinosaur Hoodie",
+      "price": 24.99,
+      "originalPrice": 34.99,
+      "brand": "Carter's",
+      "description": "Cozy cotton hoodie with dinosaur embroidery.",
+      "detailedDescription": "This playful hoodie features a soft cotton fleece interior and embroidered dinosaur design that withstands repeated washing. The kangaroo pocket keeps little hands warm.",
+      "features": [
+        "100% cotton fleece",
+        "Embroidered design",
+        "Front kangaroo pocket",
+        "Adjustable drawstring hood",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-psd/beautiful-asian-kid-posing_23-2151871545.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 32,
+      "sold": 48,
+      "category": "Jackets",
+      "audience": "children",
+      "sizes": [
+        "4T",
+        "5T",
+        "6T"
+      ],
+      "colors": [
+        "Blue",
+        "Gray"
+      ],
+      "rating": 4.6
+    },
+    {
+      "id": "49",
+      "title": "Kids' Light-Up Sneakers",
+      "price": 34.99,
+      "originalPrice": 49.99,
+      "brand": "Skechers",
+      "description": "Fun sneakers that light up when walking.",
+      "detailedDescription": "These exciting sneakers feature LED lights in the soles that activate with each step. The memory foam insoles provide cushioning while the hook-and-loop closure makes them easy to put on.",
+      "features": [
+        "LED lights in soles",
+        "Memory foam cushioned",
+        "Hook-and-loop closure",
+        "Flexible rubber outsole",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/premium-photo/lighting-shoes-are-great-adding-bit-fun-flair-your-outfit-whether-youre-looking_1067267-7551.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 26,
+      "sold": 39,
+      "category": "Shoes",
+      "audience": "children",
+      "sizes": [
+        "10C",
+        "11C",
+        "12C",
+        "13C",
+        "1Y"
+      ],
+      "colors": [
+        "Blue",
+        "Pink",
+        "Black"
+      ],
+      "rating": 4.8
+    },
+    {
+      "id": "50",
+      "title": "Kids' Cartoon T-Shirt",
+      "price": 12.99,
+      "originalPrice": 16.99,
+      "brand": "Disney",
+      "description": "Cotton tee with favorite character print.",
+      "detailedDescription": "Made from super-soft 100% cotton jersey, this tee features vibrant character graphics that resist cracking or fading. The tagless label prevents irritation on sensitive skin.",
+      "features": [
+        "100% cotton jersey",
+        "Screen-printed graphics",
+        "Tagless label",
+        "Reinforced shoulder seams",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/premium-photo/photo-fashion-kids-bella-canvas-toddler-tshirt-mockup_1128603-67376.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 54,
+      "sold": 87,
+      "category": "T-Shirts",
+      "audience": "children",
+      "sizes": [
+        "2T",
+        "3T",
+        "4T",
+        "5T"
+      ],
+      "colors": [
+        "White",
+        "Blue",
+        "Pink"
+      ],
+      "rating": 4.4
+    },
+    {
+      "id": "51",
+      "title": "Kids' Jogger Pants",
+      "price": 19.99,
+      "originalPrice": 29.99,
+      "brand": "Gap Kids",
+      "description": "Soft joggers with elastic waistband.",
+      "detailedDescription": "These comfortable joggers feature an elastic waistband with an adjustable drawstring for the perfect fit. The tapered legs with ribbed cuffs stay in place during active play.",
+      "features": [
+        "100% cotton fleece",
+        "Elastic drawstring waist",
+        "Tapered leg with ribbed cuffs",
+        "Hidden side pockets",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-photo/photorealistic-portrait-young-person-with-braids_23-2151570164.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 38,
+      "sold": 52,
+      "category": "Pants",
+      "audience": "children",
+      "sizes": [
+        "2T",
+        "3T",
+        "4T",
+        "5T"
+      ],
+      "colors": [
+        "Gray",
+        "Navy",
+        "Black"
+      ],
+      "rating": 4.5
+    },
+    {
+      "id": "52",
+      "title": "Kids' Backpack",
+      "price": 29.99,
+      "originalPrice": 39.99,
+      "brand": "Pottery Barn Kids",
+      "description": "Personalizable backpack with lunch box.",
+      "detailedDescription": "This durable backpack features a roomy main compartment and matching lunch box. The wipe-clean lining resists spills while the padded straps provide comfort.",
+      "features": [
+        "Personalizable with name",
+        "Includes matching lunch box",
+        "Wipe-clean lining",
+        "Padded shoulder straps",
+        "Front zip pocket"
+      ],
+      "image": "https://img.freepik.com/premium-photo/young-child-cozy-gray-sweater-jeans-stands-still-against-white-background_988819-4767.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 22,
+      "sold": 31,
+      "category": "Bags",
+      "audience": "children",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Blue",
+        "Pink",
+        "Green"
+      ],
+      "rating": 4.7
+    },
+    {
+      "id": "53",
+      "title": "Kids' Pajama Set",
+      "price": 22.99,
+      "originalPrice": 32.99,
+      "brand": "Hanna Andersson",
+      "description": "Organic cotton PJ set with fun print.",
+      "detailedDescription": "Made from GOTS-certified organic cotton, these pajamas feature playful prints and are free from harmful chemicals. The elastic waistband and cuffs provide comfort all night.",
+      "features": [
+        "100% organic cotton",
+        "GOTS certified",
+        "Elastic waistband and cuffs",
+        "Fun character prints",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/premium-photo/photography-black-american-kids-girl-happy-lifestyle-light-color-background_1288657-162521.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 41,
+      "sold": 59,
+      "category": "Pajamas",
+      "audience": "children",
+      "sizes": [
+        "2T",
+        "3T",
+        "4T",
+        "5T"
+      ],
+      "colors": [
+        "Blue",
+        "Pink",
+        "Gray"
+      ],
+      "rating": 4.8
+    },
+    {
+      "id": "54",
+      "title": "Kids' Winter Coat",
+      "price": 49.99,
+      "originalPrice": 69.99,
+      "brand": "Columbia",
+      "description": "Water-resistant puffer coat with hood.",
+      "detailedDescription": "This warm winter coat features Omni-Tech waterproof technology and thermal-reflective lining. The adjustable hood and cuffs help seal out cold air.",
+      "features": [
+        "Omni-Tech waterproof",
+        "Thermal-reflective lining",
+        "Adjustable hood",
+        "Elastic cuffs",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-photo/portrait-young-child-tourist-visiting-great-wall-china_23-2151261839.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 17,
+      "sold": 23,
+      "category": "Outerwear",
+      "audience": "children",
+      "sizes": [
+        "2T",
+        "3T",
+        "4T",
+        "5T"
+      ],
+      "colors": [
+        "Red",
+        "Navy",
+        "Pink"
+      ],
+      "rating": 4.6
+    },
+    {
+      "id": "55",
+      "title": "Kids' Baseball Cap",
+      "price": 9.99,
+      "originalPrice": 14.99,
+      "brand": "Nike",
+      "description": "Adjustable cap with velcro closure.",
+      "detailedDescription": "This durable kids' cap features an adjustable velcro strap for a perfect fit as they grow. The structured front panel maintains its shape while the breathable fabric keeps them cool during play.",
+      "features": [
+        "Adjustable velcro closure",
+        "Structured front panel",
+        "Breathable fabric",
+        "Embroidered logo",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-photo/view-young-baseball-player_23-2151023623.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 63,
+      "sold": 78,
+      "category": "Accessories",
+      "audience": "children",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Blue",
+        "Black",
+        "Red"
+      ],
+      "rating": 4.3
+    },
+    {
+      "id": "56",
+      "title": "Kids' Swim Trunks",
+      "price": 14.99,
+      "originalPrice": 19.99,
+      "brand": "Speedo",
+      "description": "Quick-dry swim trunks with mesh liner.",
+      "detailedDescription": "These performance swim trunks feature UPF 50+ sun protection and a built-in mesh liner for comfort. The quick-dry fabric sheds water quickly after swimming.",
+      "features": [
+        "UPF 50+ sun protection",
+        "Quick-dry fabric",
+        "Built-in mesh liner",
+        "Elastic waistband with drawstring",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/premium-photo/photography-black-american-kids-boy-happy-lifestyle-light-background_1288657-154356.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 35,
+      "sold": 47,
+      "category": "Swimwear",
+      "audience": "children",
+      "sizes": [
+        "2T",
+        "3T",
+        "4T",
+        "5T"
+      ],
+      "colors": [
+        "Blue",
+        "Green",
+        "Red"
+      ],
+      "rating": 4.5
+    },
+    {
+      "id": "57",
+      "title": "Kids' Hair Accessories",
+      "price": 7.99,
+      "originalPrice": 12.99,
+      "brand": "Claire's",
+      "description": "Assorted hair clips and bows.",
+      "detailedDescription": "This 15-piece set includes colorful hair clips, bows and elastics in various styles. All pieces are nickel-free and safe for sensitive skin.",
+      "features": [
+        "15-piece set",
+        "Nickel-free materials",
+        "Various styles included",
+        "Colorful designs",
+        "Hand wash recommended"
+      ],
+      "image": "https://img.freepik.com/premium-psd/skeptic-toddler-native-american-profile-wildlife-attire-posed-with-dramatic-lighting-pastel-rose-background_410516-141074.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 72,
+      "sold": 93,
+      "category": "Accessories",
+      "audience": "children",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Multicolor"
+      ],
+      "rating": 4.2
+    },
+    {
+      "id": "58",
+      "title": "Classic White Sneakers",
+      "price": 69.99,
+      "originalPrice": 89.99,
+      "brand": "Adidas",
+      "description": "Iconic leather sneakers with gum sole.",
+      "detailedDescription": "These timeless sneakers feature a premium leather upper and distinctive gum rubber sole. The cushioned footbed provides all-day comfort while maintaining a sleek profile.",
+      "features": [
+        "Premium leather upper",
+        "Gum rubber outsole",
+        "OrthoLite sockliner",
+        "Perforated 3-Stripes",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-photo/close-up-person-wearing-futuristic-sneakers_23-2151005710.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 38,
+      "sold": 92,
+      "category": "Shoes",
+      "audience": "unisex",
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "colors": [
+        "White"
+      ],
+      "rating": 4.7
+    },
+    {
+      "id": "59",
+      "title": "Canvas Backpack",
+      "price": 34.99,
+      "originalPrice": 49.99,
+      "brand": "Herschel",
+      "description": "Durable backpack with laptop sleeve.",
+      "detailedDescription": "This classic backpack features a padded 15\" laptop sleeve and signature striped liner. The adjustable shoulder straps and airmesh back padding provide comfortable carrying.",
+      "features": [
+        "15\" laptop sleeve",
+        "Signature striped liner",
+        "Front pocket with key clip",
+        "Adjustable shoulder straps",
+        "Airmesh back padding"
+      ],
+      "image": "https://img.freepik.com/premium-photo/minimalistic-image-young-adult-cozy-outfit_988819-6686.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 25,
+      "sold": 43,
+      "category": "Bags",
+      "audience": "unisex",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Black",
+        "Navy",
+        "Gray"
+      ],
+      "rating": 4.6
+    },
+    {
+      "id": "60",
+      "title": "Beanie Hat",
+      "price": 14.99,
+      "originalPrice": 19.99,
+      "brand": "Carhartt",
+      "description": "Warm acrylic knit beanie.",
+      "detailedDescription": "This durable beanie features a rib-knit design that stretches for a comfortable fit. The acrylic yarn provides warmth without itchiness.",
+      "features": [
+        "100% acrylic",
+        "Rib-knit construction",
+        "One-size-fits-most",
+        "Reinforced edge",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-photo/portrait-fat-tourist-traveling_23-2151711635.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 47,
+      "sold": 68,
+      "category": "Accessories",
+      "audience": "unisex",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Black",
+        "Gray",
+        "Navy"
+      ],
+      "rating": 4.4
+    },
+    {
+      "id": "61",
+      "title": "Cotton Socks (3-Pack)",
+      "price": 12.99,
+      "originalPrice": 16.99,
+      "brand": "Bombas",
+      "description": "Breathable socks with cushioned soles.",
+      "detailedDescription": "These premium socks feature honeycomb arch support and seamless toes to prevent irritation. For every pair purchased, Bombas donates a pair to those in need.",
+      "features": [
+        "Honeycomb arch support",
+        "Seamless toe",
+        "Reinforced heel and toe",
+        "Vented mesh panels",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/premium-photo/close-up-feet-wearing-white-warm-socks_926199-4318395.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 83,
+      "sold": 127,
+      "category": "Accessories",
+      "audience": "unisex",
+      "sizes": [
+        "S/M",
+        "L/XL"
+      ],
+      "colors": [
+        "Black",
+        "White",
+        "Gray"
+      ],
+      "rating": 4.8
+    },
+    {
+      "id": "62",
+      "title": "Hooded Rain Jacket",
+      "price": 49.99,
+      "originalPrice": 79.99,
+      "brand": "The North Face",
+      "description": "Water-resistant jacket with sealed seams.",
+      "detailedDescription": "This lightweight jacket features DryVent 2L fabric that provides waterproof protection while remaining breathable. The adjustable hood and cuffs help seal out wind and rain.",
+      "features": [
+        "DryVent 2L fabric",
+        "Fully sealed seams",
+        "Adjustable hood",
+        "Zippered hand pockets",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/premium-photo/person-wearing-minimalist-raincoat-with-fitted-hood-standing-gentle-rain_1102944-23501.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 19,
+      "sold": 31,
+      "category": "Jackets",
+      "audience": "unisex",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Yellow",
+        "Black",
+        "Blue"
+      ],
+      "rating": 4.5
+    },
+    {
+      "id": "63",
+      "title": "Sunglasses",
+      "price": 19.99,
+      "originalPrice": 29.99,
+      "brand": "Quay",
+      "description": "UV-protection sunglasses with polarized lenses.",
+      "detailedDescription": "These stylish sunglasses feature 100% UV protection and polarized lenses that reduce glare. The lightweight acetate frame provides all-day comfort.",
+      "features": [
+        "100% UV protection",
+        "Polarized lenses",
+        "Lightweight acetate frame",
+        "Scratch-resistant coating",
+        "Includes microfiber pouch"
+      ],
+      "image": "https://img.freepik.com/free-photo/people-showing-support-suicide-prevention-day-with-yellow-background_23-2151607992.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 36,
+      "sold": 59,
+      "category": "Accessories",
+      "audience": "unisex",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Black",
+        "Tortoise"
+      ],
+      "rating": 4.3
+    },
+    {
+      "id": "64",
+      "title": "Gym Water Bottle",
+      "price": 16.99,
+      "originalPrice": 24.99,
+      "brand": "Hydro Flask",
+      "description": "Insulated stainless steel water bottle.",
+      "detailedDescription": "This vacuum-insulated bottle keeps drinks cold for up to 24 hours or hot for up to 12 hours. The powder-coated exterior resists condensation and slips.",
+      "features": [
+        "24-hour cold retention",
+        "12-hour heat retention",
+        "Stainless steel construction",
+        "Powder-coated exterior",
+        "BPA-free"
+      ],
+      "image": "https://img.freepik.com/premium-photo/shot-young-woman-holding-empty-water-bottle_762026-71109.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 54,
+      "sold": 78,
+      "category": "Accessories",
+      "audience": "unisex",
+      "sizes": [
+        "24 oz"
+      ],
+      "colors": [
+        "Black",
+        "Blue",
+        "Pink"
+      ],
+      "rating": 4.7
+    },
+    {
+      "id": "65",
+      "title": "Fleece Blanket",
+      "price": 29.99,
+      "originalPrice": 49.99,
+      "brand": "Pendleton",
+      "description": "Soft fleece throw blanket.",
+      "detailedDescription": "This plush fleece blanket features a traditional Native American-inspired pattern. The double-sided design provides warmth while remaining lightweight.",
+      "features": [
+        "100% polyester fleece",
+        "Double-sided design",
+        "Traditional patterns",
+        "60\" x 80\" size",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/premium-photo/woman-covered-brown-blanket-sitting-bed-home_1313853-119427.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 27,
+      "sold": 39,
+      "category": "Home",
+      "audience": "unisex",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Gray",
+        "Navy",
+        "Red"
+      ],
+      "rating": 4.5
+    },
+    {
+      "id": "66",
+      "title": "Canvas Tote Bag",
+      "price": 14.99,
+      "originalPrice": 19.99,
+      "brand": "Baggu",
+      "description": "Reusable shopping tote with reinforced handles.",
+      "detailedDescription": "This sturdy tote holds up to 50 pounds and folds into its own pocket for easy storage. The reinforced handles distribute weight comfortably.",
+      "features": [
+        "Holds 50 lbs",
+        "Folds into pocket",
+        "Reinforced handles",
+        "15\" x 16.5\" x 5\" dimensions",
+        "Machine washable"
+      ],
+      "image": "https://img.freepik.com/free-photo/women-shopping-buying-consumer-products-customer-day-celebration_23-2151623411.jpg?ga=GA1.1.214547797.1744994752&semt=ais_items_boosted&w=740",
+      "stock": 62,
+      "sold": 84,
+      "category": "Bags",
+      "audience": "unisex",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Natural",
+        "Black",
+        "Striped"
+      ],
+      "rating": 4.4
+    },
+    {
+      "id": "67",
+      "title": "Wool Scarf",
+      "price": 24.99,
+      "originalPrice": 39.99,
+      "brand": "Pendleton",
+      "description": "Warm wool scarf in plaid pattern.",
+      "detailedDescription": "This wool-blend scarf features traditional Native American-inspired patterns. The fringed edges add a classic touch while the generous length allows for versatile styling.",
+      "features": [
+        "80% wool, 20% cotton",
+        "Traditional patterns",
+        "Fringed edges",
+        "72\" length",
+        "Dry clean recommended"
+      ],
+      "image": "https://img.freepik.com/premium-photo/scarf-that-has-pattern-squares-it_1159488-10282.jpg?ga=GA1.1.214547797.1744994752&semt=ais_hybrid&w=740",
+      "stock": 31,
+      "sold": 42,
+      "category": "Accessories",
+      "audience": "unisex",
+      "sizes": [
+        "One Size"
+      ],
+      "colors": [
+        "Red/Black",
+        "Blue/Green"
+      ],
+      "rating": 4.6
+    }
+  ],
+  "cartItems": [
+    {
+      "id": "1",
+      "userId": 1,
+      "productId": 2,
+      "quantity": 1
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 2
+        },
+        {
+          "productId": 5,
+          "quantity": 1
+        }
+      ],
+      "total": 1897,
+      "status": "delivered",
+      "createdAt": "2025-06-08T13:00:00Z"
+    }
+  ]
+}

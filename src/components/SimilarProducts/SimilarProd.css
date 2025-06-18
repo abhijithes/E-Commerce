@@ -1,0 +1,16 @@
+.similar-prod .list {
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.similar-prod {
+    padding: 10px 8vw 30px;
+    width: 100%;
+}
+
+.similar-prod #heading{
+    color: #3d3d3d;
+    font-size: 36px;
+}

@@ -1,0 +1,91 @@
+.footer{
+    margin-top: 150px;
+}
+
+.logos{
+    width: 100%;
+    height: 100px;
+    background-color: #666666;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.brand-logo{
+    height: 60px;
+    mix-blend-mode: multiply;
+    opacity: .6;
+    transition: all 0.1s;
+}
+.brand-logo:hover{
+    transform: scale(1.1);
+    opacity: .9;
+}
+.conteiner{
+    width: 100%;
+    height: 700px;
+    background-color: #3d3d3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.subscribe{
+    width: 100%;
+    padding: 0 25%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.subscribe #logo{
+    font-family: 'Edu SA Hand Beginners', cursive;
+    font-size: 80px;
+    font-weight: 100;
+    color: white;
+}
+.subscribe h3{
+    font-size: 40px;
+    color: white;
+    font-weight: 100;
+}
+.button{
+    width: 300px;
+    background-color: #383838;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.659);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button:hover{
+    background-color: #2d2d2d;
+}
+.button p{
+    color: #cac8c8;
+    margin-left: 20px;
+}
+button{
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(4, 4, 4);
+    margin-right: 5px;
+    color: rgb(184, 184, 184);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .15s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.copyrights{
+    border-top: 2px solid white;
+    color: rgb(233, 232, 232);
+    text-align: center;
+    padding: 15px;
+}
