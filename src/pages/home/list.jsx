@@ -5,7 +5,7 @@ export default function list() {
   const [bestProd, setBestProd] = useState([]);
   const scrollDiv = useRef();
   useEffect(() => {
-    fetch("http://localhost:3001/products")
+    fetch("http://localhost:3000/products")
       .then((response) => response.json())
       .then((data) =>{const sorted = data.sort((a, b) => b.sold - a.sold);
         setBestProd(sorted.slice(0,7))

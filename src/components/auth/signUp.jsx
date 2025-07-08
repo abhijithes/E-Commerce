@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import "./auth.css";
+import { useNavigate } from "react-router-dom";
 
 export default function SignUp({ handleAuthType }) {
-  const [userData, setUserData] = useState({
-    name: "",
-    email: "",
-    password: "",
-  });
-
+  const [userData, setUserData] = useState({});
+  const navigate = useNavigate();
   const handleChange = (event) => {
     setUserData((prev) => ({
       ...prev,
@@ -22,12 +19,15 @@ export default function SignUp({ handleAuthType }) {
       return;
     }
     try {
-      const res = await fetch("http://localhost:3001/users", {
+      const res = await fetch("http://localhost:3000/users", {
         method: "POST",
         body: JSON.stringify(userData),
       });
       if(res.ok){
-
+       alert("account created Successfully!")
+       localStorage.setItem('user',JSON.stringify(userData));
+       navigate('/products') 
+       window.location.reload();
       }
     } catch (err) {
       console.error(err);

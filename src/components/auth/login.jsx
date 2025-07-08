@@ -19,30 +19,26 @@ export default function login({ handleAuthType }) {
   };
 
   const onSubmit = () => {
-      fetch(`http://localhost:3001/users?email=${enteredCred.email}`)
-        .then((res)=> res.json())
-        .then((res) => {
-          if(res.length > 0)
-           { setUserCred(res[0])
-             console.log(res[0]);
-           }
-          else
-            alert("No user Found")
-        })
+    fetch(`http://localhost:3000/users?email=${enteredCred.email}`)
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.length > 0) {
+          let fetchedId = res[0];
+          if (fetchedId.password === enteredCred.password) {
+            setUserCred(fetchedId);
+            localStorage.setItem("user", JSON.stringify(fetchedId));
+            alert("Login Successfull");
+            navigate("/products");
+            window.location.reload();
+          } else {
+            alert("Wrong password!");
+          }
+        } else alert("No user Found");
+      });
     console.log(userCred, "userCred");
+    console.log(enteredCred, "EnteredCred");
   };
 
-  const authCheck =()=>{
-    if(userCred.password === enteredCred.password){
-      alert("Login Successfull")
-      navigate('')
-    }else{
-      alert("Wrong password!")
-    }
-  }
-  useEffect(()=>{
-    authCheck()
-  },[userCred])
   return (
     <div className="sign-up-in">
       <p>Welcome back!</p>
@@ -53,6 +49,7 @@ export default function login({ handleAuthType }) {
         placeholder="Name"
         autoComplete="off"
         onChange={handleChange}
+        defaultValue={""}
       />
       <input
         className="component"

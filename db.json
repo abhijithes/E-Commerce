@@ -7,11 +7,18 @@
       "password": "123456"
     },
     {
-      "id": "053d",
-      "name": "messi",
+      "id": "72a8",
+      "name": "test1",
       "email": "ney@gmail.com",
-      "password": "pass",
-      "Confirmpassword": "pass"
+      "password": "qq",
+      "Confirmpassword": "qq"
+    },
+    {
+      "id": "3cec",
+      "name": "messi",
+      "email": "mijoy@gmail.com",
+      "password": "q",
+      "Confirmpassword": "q"
     }
   ],
   "products": [
@@ -2024,9 +2031,21 @@
   ],
   "cartItems": [
     {
-      "id": "1",
-      "userId": 1,
-      "productId": 2,
+      "id": "99bc",
+      "userId": "3cec",
+      "productId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "3fe3",
+      "userId": "3cec",
+      "productId": "62",
+      "quantity": 2
+    },
+    {
+      "id": "19f8",
+      "userId": "3cec",
+      "productId": "14",
       "quantity": 1
     }
   ],

@@ -60,3 +60,7 @@ body{
     color: #ffffff;
     margin: 5px;
 }
+#logout-btn{
+    color: black;
+    transition: all .15s ease-in;
+}

@@ -23,7 +23,7 @@ export default function products() {
   });
 
   useEffect(() => {
-    fetch("http://localhost:3001/products")
+    fetch("http://localhost:3000/products")
       .then((res) => res.json())
       .then((res) => {
         setProd(res);
@@ -103,9 +103,9 @@ export default function products() {
   useEffect(()=>{
     const visibleProd = filteredprod.slice(0, showProdCount);
     setShowProd(visibleProd);
-  },[filteredprod,showProdCount,handleSearch])
+  },[filteredprod,showProdCount])
 
-
+  if (!selectedFilters) return <p>Loading product...</p>;
   return (
     <main className="product-home">
       <div className="filter-section">
@@ -174,8 +174,8 @@ export default function products() {
           </p>
         </div>
         <div className="product-list">
-          {showProd.map((data) => {
-           return <Card card={data}/>
+          {showProd.map((data,index) => {
+           return <Card card={data} key={index}/>
           })}
         </div>
         <div className="load-more">

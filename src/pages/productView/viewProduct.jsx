@@ -3,7 +3,9 @@ import "./viewProduct.css";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SimilarProd from "../../components/SimilarProducts/SimilarProd";
-import Cart from '../cart/cart'
+import Cart from "../cart/cart";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { use } from "react";
 
 export default function ViewProduct() {
@@ -11,21 +13,47 @@ export default function ViewProduct() {
   const { ProductId } = useParams();
   const [product, setProduct] = useState();
   const [qty, setQty] = useState(1);
+  // const [cartDetails, setcartDetails] = useState({
+  //   userId: '',
+  //   productId: '',
+  //   quantity: ''
+  // });
 
   useEffect(() => {
     const func = () => {
       console.log("hii");
-      fetch(`http://localhost:3001/products/${ProductId}`)
+      fetch(`http://localhost:3000/products/${ProductId}`)
         .then((res) => res.json())
         .then((data) => setProduct(data))
         .catch((err) => console.error("error", err));
     };
     func();
   }, []);
+
+  const addToCart = () => {
+    let user = JSON.parse(localStorage.getItem("user"));
+    const cartDetails = {
+      userId: user.id,
+      productId: ProductId,
+      quantity: qty
+    };
+
+    fetch("http://localhost:3000/cartItems", {
+      method: "POST",
+      body: JSON.stringify(cartDetails),
+    })
+      .then((res) => {
+        if (res.ok) toast.success("Product added to cart!");
+        else toast.error("Failed to add product.");
+      })
+      .catch(() => toast.error("Network error."));
+  };
+
   if (!product) return <p>Loading product...</p>;
 
   return (
     <div>
+      <ToastContainer position="top-center" autoClose={2000} />
       <div className="path-view">
         <p onClick={() => navigate("/")}>Home </p>
         <span>&rsaquo;</span>
@@ -90,7 +118,7 @@ export default function ViewProduct() {
                   +
                 </button>
               </div>
-              <button  >Add To Cart</button>
+              <button onClick={addToCart}>Add To Cart</button>
             </div>
             <div className="buynow">
               <button>Buy Now</button>
