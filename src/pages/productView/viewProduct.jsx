@@ -52,7 +52,7 @@ export default function ViewProduct() {
   if (!product) return <p>Loading product...</p>;
 
   return (
-    <div>
+    <div className="view-product">
       <ToastContainer position="top-center" autoClose={2000} />
       <div className="path-view">
         <p onClick={() => navigate("/")}>Home </p>
