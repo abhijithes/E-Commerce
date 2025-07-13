@@ -1,6 +1,6 @@
-// src/components/Blog.jsx
+
 import React from "react";
-import "./Blog.css";
+import "./blog.css";
 
 const blogPosts = [
   {
