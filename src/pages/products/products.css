@@ -4,7 +4,7 @@
 }
 
 .filter-section{
-    min-height: 500px;
+    height: auto;
     width: 20%;
     padding: 30px 0;
 }
@@ -152,11 +152,25 @@
 .down{
     transform: rotate(-90deg);
 }
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
 
 /* responsive design  */ 
     @media (max-width: 620px) {
         .product-home{
+            flex-direction: column;
             padding: 0 5vw;
+        }
+        .product-list{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product-home{
+            padding: 0 0;
         }
         .filter-section{
             width: 100%;
@@ -172,7 +186,47 @@
         .filter-section h3{
             font-size: 10px;
         }
-
-
-        
+        .head-section h1{
+            font-size: 14px;
+        }
+        .filter-section{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0;
+        }
+        .filter-list{
+            position: absolute;
+            top: 160px;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            padding: 10px;
+            z-index: 1000;
+        }
+        .search-bar{
+            margin: 0;
+        }
+        .head-section p{
+            font-size: 10px;
+        }
+        .product-home .show-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .show-section .product-list{
+            padding: 0 0 0 0 ;
+            width: 90vw;
+            align-self: center;
+        }
+        .product-list .card{
+            height: 250px;
+            width: 170px;
+        }
+        .product-list .card .img{
+            height: 200px;
+            width: 170px;
+        }
     }

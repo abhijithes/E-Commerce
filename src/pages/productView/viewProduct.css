@@ -164,3 +164,23 @@
     color: #595959;
     line-height: 170%;
 }
+
+@media (max-width: 620px){
+    .product-conteiner{
+        flex-direction: column;
+    }
+    .product-images{
+        width: 100%;
+        height: 50vh;
+    }
+    .product-details{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .product-details .title h1{
+        font-size: 20px;
+    }
+    .product-description p,.product-description li{
+        font-size: 12px;
+    }
+}

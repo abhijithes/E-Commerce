@@ -66,3 +66,8 @@
 .password input{
     border-bottom: none;
 }
+@media (max-width: 620px) {
+    .sign-up-in{
+        padding: 0 5%;
+    }
+}

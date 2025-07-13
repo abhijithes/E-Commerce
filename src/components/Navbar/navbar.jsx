@@ -10,6 +10,21 @@ import { Button } from "@mui/material";
 export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState();
   const [loggined, setLoggined] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth <= 620);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 620);
+    };
+
+    handleResize(); // Set initial state
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  },[])
 
   const isLoggined =()=>{
     let user = '';
@@ -43,7 +58,7 @@ export default function Navbar() {
         <Link to="/about" className="links">
           About Us
         </Link>
-        { loggined && <Link to="/blog" className="links">
+        { !isMobile && <Link to="/blog" className="links">
           Blog
         </Link> }
       </div>

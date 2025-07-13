@@ -12,3 +12,9 @@
 .auth-section{
     height: 80vh;
 }
+@media (max-width: 620px) {
+    .auth-section .container{
+        width: 80vw ;
+        height: 50vh ;
+    }
+}
