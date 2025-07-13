@@ -16,7 +16,7 @@ export default function bestProd({category}) {
       <p id='heading'>Similar Products</p>
       <div className='list'>
       { similarProd.map((data,index)=>{
-        return <div className="card"><Card card={data} key={index}/></div> 
+        return <Card card={data} key={index}/>
       })}
       </div>
     </section>
