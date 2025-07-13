@@ -89,3 +89,52 @@ button:hover{
     text-align: center;
     padding: 15px;
 }
+
+/* responsive design  */
+
+@media (max-width: 620px) {
+    .footer{
+        margin-top: 10px;
+    }
+    .brand-logo{
+        width: 10%;
+    }
+    .logos{
+        height: 60px;
+    }
+    .conteiner #logo{
+        font-size: 40px;
+    }
+    .conteiner{
+        height: 350px;
+    }
+    .subscribe{
+        padding: 0 10%;
+        height: 250px;
+    }
+    .conteiner .subscribe h3{
+        font-size: 15px;
+    }
+    .button{
+        width: 200px;
+        height: 40px;
+    }
+    .button p{
+        font-size: 12px;
+    }
+    .button button{
+        width: 35px;
+        height: 35px;
+        margin-right: 2px;
+    }
+    .button button span{
+        font-size: 12px;
+    }   
+    .copyrights p{
+        font-size: 12px;
+        margin: 0px;
+    }
+    .copyrights{
+        border-top: #cac8c8 1px solid;
+    }
+}

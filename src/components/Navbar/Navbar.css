@@ -1,30 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand+Beginners&display=swap');
-:root{
+
+:root {
     padding: 0;
 }
-body{
+
+body {
     padding: 0;
     margin: 0vw;
 }
-.main{
+
+.main {
     padding: 0 8vw;
     height: 100px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.links{
+
+.links {
     width: 30vw;
     display: flex;
     justify-content: space-evenly;
 }
-.links{
+
+.links {
     text-decoration: none;
     font-size: 16px;
     color: black;
 }
-#eluxo-logo{
+
+#eluxo-logo {
     font-family: 'Edu SA Hand Beginners', cursive;
     font-size: 28px;
     font-weight: 100;
@@ -33,20 +39,23 @@ body{
     opacity: 1;
 
 }
-.eluxo-logo h2{
+
+.eluxo-logo h2 {
     opacity: 1;
     color: black;
 }
 
-.icons{
+.icons {
     display: flex;
     gap: 30px;
     align-items: center;
 }
-.icons .user{
+
+.icons .user {
     position: relative;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     width: 100px;
     display: flex;
     flex-direction: column;
@@ -55,12 +64,41 @@ body{
     position: absolute;
     background-color: #3e3e3e;
 }
-.authbtn{
+
+.authbtn {
     text-decoration: none;
     color: #ffffff;
     margin: 5px;
 }
-#logout-btn{
+
+#logout-btn {
     color: black;
     transition: all .15s ease-in;
+}
+
+/* responsive design  */
+@media (max-width: 920px) {
+    .main {
+        padding: 0 4vw;
+    }
+
+    .links {
+        width: 50vw;
+        gap: 0;
+    }
+    .links a {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .nav-icon{
+        font-size: 18px !important;
+    }
+    .person-icon{
+        font-size: 22px !important;
+    }
+
+    .icons {
+        gap: 0px;
+    }
 }

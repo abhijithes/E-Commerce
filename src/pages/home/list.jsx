@@ -27,7 +27,7 @@ export default function list() {
         <div id="view-blogs-button">
           <button>
             View Our Blogs
-            <span style={{ fontSize: "1.4em", marginLeft: "16px" }}>
+            <span>
               &rsaquo;
             </span>
           </button>

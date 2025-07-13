@@ -1,6 +1,6 @@
 .home-list-section{
     width: 100%;
-    height: 90vh;
+    height: auto;
     padding: 50px 8vw;
 }
 .text-area{
@@ -43,9 +43,16 @@
 #view-blogs-button button:hover{
     transform: 1.005;
 }
+.text-area #view-blogs-button span{
+    font-size: 1.4em;
+    margin-left: 16px;
+}
 
 
 /* list stle..... */
+.list-area{
+    height: 500px;
+}
 
 .list-area .card{
     flex: 0 0 auto;
@@ -91,4 +98,48 @@
     position: sticky;
     top: 25%;
     right: 3%;
+}
+
+@media (max-width: 620px) {
+    .text-area h2{
+        font-size: 24px;
+        margin: 0;
+    }
+    .text-area p{
+        width: 100%;
+        font-size: 10px;
+        padding: 5px 0;
+        width: 50vw;
+    }
+    .text-area #view-blogs-button button{
+        font-size: 12px;
+        height: 40px;
+    }
+    .text-area #view-blogs-button span{
+        margin-left: 5px;
+        font-size: 1.5em;
+    }
+    .list-area{
+    height: 200px;
+    }
+    .home-list-section{
+        padding-bottom: 0;
+    }
+    .card{
+        width: 100%;
+        height: 200px;
+    }
+    .card .images{
+        height: 50%;
+    }
+    .card .images{
+    border-radius: 10px;
+    }
+    .card h4{
+        font-size: 10px;
+        padding-left: 0px;
+    }
+    .card p{
+        display: none;
+    }
 }

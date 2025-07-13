@@ -1,9 +1,23 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import {useNavigate} from 'react-router-dom'
 import "./home.css";
 import  List  from "./list";
 
 export default function home() {
+
+  const [isMobile, setIsMobile] = React.useState(window.innerWidth <= 620);
+
+    useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 620);
+    };
+
+    checkMobile(); // initial check
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const navigate = useNavigate();
   return (
@@ -28,9 +42,9 @@ export default function home() {
             <p>
               At Eluxo, we believe fashion should feel as good as it looks.
               That’s why every piece we create blends comfort, quality, and
-              style you can live in. Our collections are made to move with you —
+              style { !isMobile && <span>you can live in. Our collections are made to move with you —
               effortless, timeless, and modern. From design to doorstep, we
-              obsess over the details that elevate everyday wear.
+              obsess over the details that elevate everyday wear.</span>}
             </p>
             <button id="readMore">
               Read Our Blogs{" "}

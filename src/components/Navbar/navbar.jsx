@@ -43,19 +43,19 @@ export default function Navbar() {
         <Link to="/about" className="links">
           About Us
         </Link>
-        <Link to="/blog" className="links">
+        { loggined && <Link to="/blog" className="links">
           Blog
-        </Link>
+        </Link> }
       </div>
       <div className="icons">
         { !loggined ? (<div className="user" onClick={()=> setShowDropdown(!showDropdown)}>
-          <PersonIcon style={{ fontSize: "30px", cursor: "pointer" }} /><KeyboardArrowDownIcon style={{ fontSize: "28px", cursor: "pointer", fontWeight:"100" }}/>
+          <PersonIcon style={{ fontSize: "30px", cursor: "pointer"  }} className="person-icon" /><KeyboardArrowDownIcon style={{ fontSize: "28px", cursor: "pointer", fontWeight:"100" }}/>
          { showDropdown && <div className="dropdown-menu">
             <Link to="/auth" state={{ mode : 'login'}} className="authbtn">Login</Link>
             <Link to="/auth" state={{ mode : 'signup'}} className="authbtn">Sign-Up</Link>
           </div>}
-        </div>) : (<LogoutIcon style={{ fontSize: "28px", cursor: "pointer", fontWeight:"100" }} onClick={logout}/>)}
-        <Link to="/cart"> <ShoppingBagIcon /></Link>
+        </div>) : (<LogoutIcon onClick={logout} className="nav-icon"/>)}
+        <Link to="/cart"> <ShoppingBagIcon className="nav-icon"/></Link>
       </div>
     </nav>
   );

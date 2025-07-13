@@ -19,7 +19,7 @@ export default function footer() {
                 <h3>Subscribe To Your Newsletter to Stay Updated About Discounts</h3>
                 <div className="button">
                     <p>eabhijith9@gmail.com</p>
-                    <button onClick={()=> window.location.href="mailto:eabhijith9@gmail.com"}><span style={{ fontSize: "1.5em" }}> Go</span></button>
+                    <button onClick={()=> window.location.href="mailto:eabhijith9@gmail.com"}> Go</button>
                 </div>
             </div>
             <div className="copyrights">

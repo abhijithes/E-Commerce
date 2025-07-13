@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useState, useEffect } from "react";
 import "./products.css";
-import Card from './card'
+import Card from "./card";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 export default function products() {
   const [prod, setProd] = useState([]);
@@ -22,6 +23,9 @@ export default function products() {
     priceRange: [],
   });
 
+  const CategoriesRef = useRef();
+  const downArrowRef = useRef();
+
   useEffect(() => {
     fetch("http://localhost:3000/products")
       .then((res) => res.json())
@@ -37,7 +41,6 @@ export default function products() {
           audience: array2,
           priceRange: ["Under 25", "25 - 50", "50 - 100", "Over 100"],
         });
-        console.log(selectedFilters);
       })
       .catch((error) => console.log(error));
   }, []);
@@ -52,18 +55,14 @@ export default function products() {
     let updatedCat = [...currentFilter];
     if (updatedCat.length === selectedFilters[type].length) {
       updatedCat = [];
-      console.log("hello", updatedCat);
     }
     if (updatedCat.includes(value)) {
       updatedCat = updatedCat.filter((data) => data != value);
-      console.log("inc");
     } else {
       updatedCat.push(value);
-      console.log("hii", value);
     }
     if (updatedCat.length === 0) {
       updatedCat = [...selectedFilters[type]];
-      console.log("hmm");
     }
 
     if (type === "categories") setcategories(updatedCat);
@@ -75,7 +74,6 @@ export default function products() {
     const temp = prod.filter((data) => categories.includes(data.category));
     const temp2 = temp.filter((data) => audience.includes(data.audience));
     if (priceRange.length != selectedFilters.priceRange.length) {
-      console.log("from")
       const priceConditions = priceRange.map((range) => {
         if (range === "Under 25") return (price) => price < 25;
         if (range === "25 - 50") return (price) => price >= 25 && price <= 50;
@@ -89,30 +87,44 @@ export default function products() {
         return priceConditions.some((condition) => condition(price));
       });
       setfilteredProd(temp3);
-    }else setfilteredProd(temp2);
+    } else setfilteredProd(temp2);
   };
   useEffect(() => {
     filterProd();
   }, [categories, audience, priceRange]);
 
-  const handleSearch = (text) =>{
+  const handleSearch = (text) => {
     const searchText = text.toLowerCase();
-    const filtered = prod.filter((item)=> item.title.toLowerCase().includes(searchText) );
+    const filtered = prod.filter((item) =>
+      item.title.toLowerCase().includes(searchText)
+    );
     setfilteredProd(filtered);
-  }
-  useEffect(()=>{
+  };
+  useEffect(() => {
     const visibleProd = filteredprod.slice(0, showProdCount);
     setShowProd(visibleProd);
-  },[filteredprod,showProdCount])
+  }, [filteredprod, showProdCount]);
+
+  const HandleFilter = (value) => {
+    if (CategoriesRef.current) {
+      CategoriesRef.current.classList.toggle("show-filter");
+      downArrowRef.current.classList.toggle("down");
+      console.log(CategoriesRef.current);
+    }
+  };
 
   if (!selectedFilters) return <p>Loading product...</p>;
   return (
     <main className="product-home">
       <div className="filter-section">
         <div className="category-filter">
-          <h1>
+          <h1 onClick={() => HandleFilter("categories")}>
             <span>|</span> Categories
+            <span className="arrow-icon down" ref={downArrowRef}>
+              <ArrowDropDownIcon />
+            </span>
           </h1>
+          <div ref={CategoriesRef} className="show-filter">
           {selectedFilters.categories.map((data, index) => {
             return (
               <h3
@@ -124,6 +136,7 @@ export default function products() {
               </h3>
             );
           })}
+          </div>
         </div>
         <div className="audience-filter">
           <h1>
@@ -158,8 +171,10 @@ export default function products() {
         <div className="head-section">
           <h1>Our Collection Of Products</h1>
           <div className="search-bar">
-            <input type="text" 
-            onChange={(event)=>handleSearch(event.target.value)} />
+            <input
+              type="text"
+              onChange={(event) => handleSearch(event.target.value)}
+            />
             <div className="search-icon">
               <img
                 src="https://img.icons8.com/?size=100&id=Y6AAeSVIcpWt&format=png&color=FFFFFF"
@@ -174,12 +189,14 @@ export default function products() {
           </p>
         </div>
         <div className="product-list">
-          {showProd.map((data,index) => {
-           return <Card card={data} key={index}/>
+          {showProd.map((data, index) => {
+            return <Card card={data} key={index} />;
           })}
         </div>
         <div className="load-more">
-          <button onClick={()=> setShowProdCount(showProdCount+8)}>Load More<span style={{ fontSize: "1.4em" }}> &rsaquo;</span></button>
+          <button onClick={() => setShowProdCount(showProdCount + 8)}>
+            Load More<span style={{ fontSize: "1.4em" }}> &rsaquo;</span>
+          </button>
         </div>
       </div>
     </main>
