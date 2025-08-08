@@ -2,10 +2,11 @@ import { useState, useEffect, useRef } from "react";
 import "./list.css";
 
 export default function list() {
+  const API_URL = "https://my-ecomm-json-server.onrender.com";
   const [bestProd, setBestProd] = useState([]);
   const scrollDiv = useRef();
   useEffect(() => {
-    fetch("http://localhost:3000/products")
+    fetch(`${API_URL}/products`)
       .then((response) => response.json())
       .then((data) =>{const sorted = data.sort((a, b) => b.sold - a.sold);
         setBestProd(sorted.slice(0,7))

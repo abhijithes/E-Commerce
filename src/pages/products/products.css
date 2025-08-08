@@ -223,10 +223,10 @@
         }
         .product-list .card{
             height: 250px;
-            width: 170px;
+            width: 46%;
         }
         .product-list .card .img{
             height: 200px;
-            width: 170px;
+            width: 100%;
         }
     }
