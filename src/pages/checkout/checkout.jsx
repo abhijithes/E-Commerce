@@ -17,7 +17,8 @@ export default function checkout() {
   }, []);
   useEffect(()=>{
     if(paymentSuccess){
-      fetch()
+      console.log("Payment Successful");
+      console.log(cartData);
     }
   },[paymentSuccess])
   return (

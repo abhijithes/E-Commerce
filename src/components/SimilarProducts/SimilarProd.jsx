@@ -3,10 +3,11 @@ import Card from '../../pages/products/card';
 import './SimilarProd.css'
 
 export default function bestProd({category}) {
+  const API_URL = "https://my-ecomm-json-server.onrender.com";
 
   const [similarProd, setSimilarProd] = useState([]);
   useEffect(()=>{
-    fetch(`http://localhost:3000/products?category=${category}`)
+    fetch(`${API_URL}/products?category=${category}`)
     .then((res)=> res.json())
     .then((res)=> setSimilarProd(res.slice(1,10)))
     .catch((err)=> console.err('error',err))

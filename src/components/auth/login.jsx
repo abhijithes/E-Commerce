@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function login({ handleAuthType }) {
+  const API_URL = "https://my-ecomm-json-server.onrender.com";
   const navigate = useNavigate();
   const [enteredCred, setenteredCred] = useState({
     email: "",
@@ -19,7 +20,7 @@ export default function login({ handleAuthType }) {
   };
 
   const onSubmit = () => {
-    fetch(`http://localhost:3000/users?email=${enteredCred.email}`)
+    fetch(`${API_URL}/users?email=${enteredCred.email}`)
       .then((res) => res.json())
       .then((res) => {
         if (res.length > 0) {

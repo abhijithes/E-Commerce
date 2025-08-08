@@ -3,6 +3,7 @@ import "./auth.css";
 import { useNavigate } from "react-router-dom";
 
 export default function SignUp({ handleAuthType }) {
+  const API_URL = "https://my-ecomm-json-server.onrender.com";
   const [userData, setUserData] = useState({});
   const navigate = useNavigate();
   const handleChange = (event) => {
@@ -19,7 +20,7 @@ export default function SignUp({ handleAuthType }) {
       return;
     }
     try {
-      const res = await fetch("http://localhost:3000/users", {
+      const res = await fetch(`${API_URL}/users`, {
         method: "POST",
         body: JSON.stringify(userData),
       });

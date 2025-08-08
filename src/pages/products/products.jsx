@@ -5,6 +5,9 @@ import Card from "./card";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 export default function products() {
+
+    const API_URL = "https://my-ecomm-json-server.onrender.com";
+
     const [prod, setProd] = useState([]);
     const [filteredprod, setfilteredProd] = useState([]);
     const [showProd, setShowProd] = useState([]);
@@ -24,7 +27,7 @@ export default function products() {
         price: false,
     });
     useEffect(() => {
-        fetch("http://localhost:3000/products")
+        fetch(`${API_URL}/products`)
             .then((res) => res.json())
             .then((res) => {
                 setProd(res);

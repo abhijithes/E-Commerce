@@ -9,6 +9,9 @@ import "react-toastify/dist/ReactToastify.css";
 import { use } from "react";
 
 export default function ViewProduct() {
+
+  const API_URL = "https://my-ecomm-json-server.onrender.com";
+
   const navigate = useNavigate();
   const { ProductId } = useParams();
   const [product, setProduct] = useState();
@@ -22,7 +25,7 @@ export default function ViewProduct() {
   useEffect(() => {
     const func = () => {
       console.log("hii");
-      fetch(`http://localhost:3000/products/${ProductId}`)
+      fetch(`${API_URL}/products/${ProductId}`)
         .then((res) => res.json())
         .then((data) => setProduct(data))
         .catch((err) => console.error("error", err));
@@ -38,7 +41,7 @@ export default function ViewProduct() {
       quantity: qty
     };
 
-    fetch("http://localhost:3000/cartItems", {
+    fetch(`${API_URL}/cartItems`, {
       method: "POST",
       body: JSON.stringify(cartDetails),
     })
