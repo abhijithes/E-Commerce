@@ -1,7 +1,9 @@
 import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "./list.css";
 
 export default function list() {
+  const navigate = useNavigate();
   const API_URL = "https://my-ecomm-json-server.onrender.com";
   const [bestProd, setBestProd] = useState([]);
   const scrollDiv = useRef();
@@ -13,7 +15,7 @@ export default function list() {
       }) 
       .catch((error) => console.error("Error:", error));
   }, []);
-
+ 
 
   return (
     <main className="home-list-section">
@@ -26,7 +28,9 @@ export default function list() {
           </p>
         </div>
         <div id="view-blogs-button">
-          <button>
+          <button  onClick={()=>{
+              navigate('/blog')
+            }}>
             View Our Blogs
             <span>
               &rsaquo;
@@ -37,7 +41,7 @@ export default function list() {
       <div className="list-area" ref={scrollDiv}>
         {bestProd.map((data) => {
           return (
-            <div className="card" key={data.id}>
+            <div className="card" key={data.id} onClick={() => {window.location.href = `/products/viewproduct/${data.id}`}}>
               <div className="images">
                 <img src={data.image} alt="image" />
               </div>

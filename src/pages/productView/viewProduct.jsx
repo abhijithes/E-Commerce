@@ -15,6 +15,7 @@ export default function ViewProduct() {
     const { ProductId } = useParams();
     const [product, setProduct] = useState();
     const [qty, setQty] = useState(1);
+    const [isLoggined, setIsLoggined] = useState(false);
     // const [cartDetails, setcartDetails] = useState({
     //   userId: '',
     //   productId: '',
@@ -30,9 +31,14 @@ export default function ViewProduct() {
                 .catch((err) => console.error("error", err));
         };
         func();
+        if (localStorage.getItem("user")) setIsLoggined(true);
+        else setIsLoggined(false);
     }, []);
-
     const addToCart = () => {
+        if (!isLoggined) {
+            toast.error("Please login to continue");
+            return;
+        }
         let user = JSON.parse(localStorage.getItem("user"));
         const cartDetails = {
             userId: user.id,
@@ -52,6 +58,22 @@ export default function ViewProduct() {
                 else toast.error("Failed to add product.");
             })
             .catch(() => toast.error("Network error."));
+    };
+
+    const buynow = () => {
+        if (!isLoggined) {
+            toast.error("Please login to continue");
+            return;
+        }
+        const cartProd = [
+            {
+                ...product,
+                qty: 1,
+                total: product.price,
+            },
+        ];
+        localStorage.setItem("cartdata", JSON.stringify(cartProd));
+        navigate("/checkout");
     };
 
     if (!product) return <p>Loading product...</p>;
@@ -126,7 +148,7 @@ export default function ViewProduct() {
                             <button onClick={addToCart}>Add To Cart</button>
                         </div>
                         <div className="buynow">
-                            <button>Buy Now</button>
+                            <button onClick={buynow}>Buy Now</button>
                         </div>
                     </div>
                 </div>

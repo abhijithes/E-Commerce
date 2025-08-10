@@ -146,10 +146,13 @@
 .products .list{
     height: 80px;
     padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .list .prod{
     gap: 0;
     justify-content: space-between;
+    align-items: center;
 }
 .list .prod img{
     height: 80%;
@@ -161,8 +164,9 @@
 }
 .list .prod p{
     font-size: 10px;
-    height: 50%;
-    padding: 5px;
+    height: 60%;
+    width: 50%;
+    padding-right: 10px;
 }
 .detail, .prod{
     width: 100%;

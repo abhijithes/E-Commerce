@@ -46,8 +46,10 @@ export default function home() {
               effortless, timeless, and modern. From design to doorstep, we
               obsess over the details that elevate everyday wear.</span>}
             </p>
-            <button id="readMore">
-              Read Our Blogs{" "}
+            <button id="readMore"  onClick={()=>{
+              navigate('/blog')
+            }}>
+              Read Our Blogs
               <span style={{ fontSize: "1.4em" }}> &rsaquo;</span>
             </button>
           </div>

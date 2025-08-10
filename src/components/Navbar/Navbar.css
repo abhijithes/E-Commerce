@@ -77,28 +77,147 @@ body {
 }
 
 /* responsive design  */
-@media (max-width: 920px) {
+@media (max-width: 720px) {
     .main {
         padding: 0 4vw;
     }
 
-    .links {
-        width: 50vw;
-        gap: 0;
-    }
-    .links a {
-        font-size: 14px;
-        margin: 0;
+    .eluxo-logo {
+        width: 60vw;
     }
 
-    .nav-icon{
-        font-size: 18px !important;
+    #eluxo-logo {
+        font-size: 34px;
+        font-weight: 900;
     }
-    .person-icon{
-        font-size: 22px !important;
+
+    .mobile-menu {
+        margin-top: 10px;
     }
 
     .icons {
-        gap: 0px;
+        gap: 10px;
+    }
+
+    /* menu bar style */
+    /* Mobile Menu Icon */
+    #log{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    .mobile-menu:hover {
+        transform: scale(1.05);
+    }
+
+    /* Mobile Links Container */
+    .mobile-links {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 240px;
+        height: 100vh;
+        background: #e2e2e2f8;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 20px 20px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .mobile-links.active {
+        animation: slideIn 0.3s forwards;
+    }
+    .mobile-links.closed{
+        animation: slideOut 0.3s forwards;
+    }
+
+    @keyframes slideIn {
+        from {
+            left: -300px;
+        }
+
+        to {
+            left: 0;
+        }
+    }
+
+    @keyframes slideOut {
+        from {
+            left: 0;
+        }
+        
+        to {
+            left: -300px;
+        }
+    }
+
+    /* Individual Links */
+    .mobile-links .links {
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 15px 10px;
+        margin: 5px 0;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .mobile-links .links:hover {
+        background: #f5f5f5;
+        transform: translateX(5px);
+        color: #000;
+    }
+
+    /* Add a subtle animation for each link */
+    .mobile-links.active .links {
+        animation: fadeInRight 0.4s ease forwards;
+        opacity: 0;
+    }
+
+    .mobile-links.active .links:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+
+    .mobile-links.active .links:nth-child(4) {
+        animation-delay: 0.2s;
+    }
+
+    .mobile-links.active .links:nth-child(5) {
+        animation-delay: 0.3s;
+    }
+
+    .mobile-links.active .links:nth-child(6) {
+        animation-delay: 0.4s;
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobile-links .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 36px;
+        cursor: pointer;
+        color: #666;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-links .close-btn:hover {
+        color: #000;
+        transform: rotate(90deg);
     }
 }

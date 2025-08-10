@@ -12,6 +12,7 @@ export default function checkout() {
   useEffect(() => {
     const temp = JSON.parse(localStorage.getItem("cartdata"));
     setCartData(temp);
+    console.log(temp);
     let temp2 = temp.reduce((total, item) => total + item.total, 0);
     setsubTotal(temp2);
   }, []);
@@ -38,8 +39,8 @@ export default function checkout() {
 
       <div className="checkout-form">
         <div className="head">
-          <h1>personal</h1>
-          <h1>billing</h1>
+          {currentStep === "personal" && <h1>personal</h1> }
+          {currentStep === "billing" && <h1>billing</h1>}
         </div>
         {currentStep === "personal" && (
           <div className="persnoal-details">
@@ -130,7 +131,7 @@ export default function checkout() {
             <div className="cart-details-list" key={index}>
               <p>{data.title}</p>
               <div className="products-details">
-                <p>{data.qty}</p>
+                <p id="chechout-cartdetails-qty">{data.qty}</p>
                 <p>{data.total}</p>
               </div>
             </div>
