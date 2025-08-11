@@ -36,7 +36,7 @@ The UI is optimized for **both mobile and desktop**, with small layout changes t
    npx json-server --watch db.json --port 5000 (in a separate terminal)
    npm run dev
 
-👤 Author
-Abhijith E S
-GitHub: @abhijithes
-Email: abhijithes266@gmail.com
+## 👤 Author
+- Abhijith E S
+- GitHub: @abhijithes
+- Email: abhijithes266@gmail.com
