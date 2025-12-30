@@ -136,6 +136,7 @@
     height: 100px;
     margin: 50px 0;
     display: flex;
+    gap: 16px;
     justify-content: center;
     align-items: center;
 }

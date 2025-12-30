@@ -1,25 +1,41 @@
-import React, { useEffect, useState } from 'react'
-import Card from '../../pages/products/card';
-import './SimilarProd.css'
+import React, { useEffect, useState } from "react";
+import Card from "../../pages/products/card";
+import "./SimilarProd.css";
 
-export default function bestProd({category}) {
-  const API_URL = "https://my-ecomm-json-server.onrender.com";
+const API_URL = "http://localhost:2000/api";
 
-  const [similarProd, setSimilarProd] = useState([]);
-  useEffect(()=>{
-    fetch(`${API_URL}/products?category=${category}`)
-    .then((res)=> res.json())
-    .then((res)=> setSimilarProd(res.slice(1,10)))
-    .catch((err)=> console.err('error',err))
-  },[category])
-  return (
-    <section className='similar-prod'>
-      <p id='heading'>Similar Products</p>
-      <div className='list'>
-      { similarProd.map((data,index)=>{
-        return <Card card={data} key={index}/>
-      })}
-      </div>
-    </section>
-  )
+export default function SimilarProd({ category }) {
+    const [similarProd, setSimilarProd] = useState([]);
+
+    useEffect(() => {
+        if (!category) return;
+
+        const fetchSimilar = async () => {
+            try {
+                const res = await fetch(
+                    `${API_URL}/product/all-products?category=${category}&limit=8`
+                );
+                const data = await res.json();
+
+                if (data.success) {
+                    setSimilarProd(data.data);
+                }
+            } catch (err) {
+                console.error("Fetch similar products error:", err);
+            }
+        };
+
+        fetchSimilar();
+    }, [category]);
+
+    return (
+        <section className="similar-prod">
+            <p id="heading">Similar Products</p>
+            <div className="list">
+                {similarProd.map((data, index) => (
+                    <Card card={data} key={index} />
+                ))}
+            </div>
+        </section>
+    );
 }

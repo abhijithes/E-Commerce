@@ -21,7 +21,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/auth' element={<Auth />} />
       <Route path='/products' element={<Products />} />
-      <Route path='/products/viewproduct/:ProductId' element={ <ProductView /> } />
+      <Route path='/products/viewproduct/:id' element={ <ProductView /> } />
       <Route path='/cart' element={<Cart />} />
       <Route path='/checkout' element={<Checkout />} />
       <Route path='/about' element={<About />} />
