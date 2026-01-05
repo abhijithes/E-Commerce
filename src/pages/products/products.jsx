@@ -53,8 +53,8 @@ export default function Products() {
 
             const params = new URLSearchParams({ page, limit });
 
-            if (categories.length) params.append("category", categories[0]);
-            if (audience.length) params.append("gender", audience[0]);
+            if (categories.length) params.append("category", categories.join(","));
+            if (audience.length) params.append("gender", audience.join(","));
             if (search) params.append("q", search);
 
             if (priceRange.length) {
@@ -71,7 +71,6 @@ export default function Products() {
             if (data.success) {
                 setTotalPages(data.totalPages);
 
-                // ✅ append instead of replace
                 setProducts((prev) =>
                     page === 1 ? data.data : [...prev, ...data.data]
                 );
@@ -88,8 +87,20 @@ export default function Products() {
     };
 
     const HandleFilterItems = (type, value) => {
-        if (type === "categories") setCategories([value]);
-        if (type === "audience") setAudience([value]);
+        if (type === "categories") {
+            if (categories.includes(value)) {
+                setCategories(categories.filter((item) => item !== value));
+                return;
+            }
+            setCategories((prev)=>[...prev,value]);
+        }
+        if (type === "audience") {
+            if (audience.includes(value)) {
+                setAudience(audience.filter((item) => item !== value));
+                return;
+            }
+            setAudience((prev)=>[...prev,value]);
+        }
         if (type === "priceRange") setPriceRange([value]);
 
         setProducts([]); 

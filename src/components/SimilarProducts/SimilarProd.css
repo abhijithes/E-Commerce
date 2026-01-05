@@ -2,7 +2,7 @@
     height: auto;
     display: flex;
     gap: 20px;
-    overflow-x: scroll;
+    overflow: scroll;
     scrollbar-width: none;
 }
 

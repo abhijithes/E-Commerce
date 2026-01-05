@@ -13,8 +13,8 @@ export default function ViewProduct() {
     const [product, setProduct] = useState(null);
     const [qty, setQty] = useState(1);
     const [isLoggined, setIsLoggined] = useState(false);
+    const [user, setUser] = useState(null);
 
-    /* ---------------- FETCH PRODUCT ---------------- */
     useEffect(() => {
         const fetchProduct = async () => {
             try {
@@ -29,18 +29,20 @@ export default function ViewProduct() {
         };
 
         fetchProduct();
-        setIsLoggined(!!localStorage.getItem("user"));
+        setIsLoggined(localStorage.getItem("user"));
+        setUser(JSON.parse(localStorage.getItem("user")));
     }, [id]);
 
-    /* ---------------- ADD TO CART ---------------- */
     const addToCart = async () => {
         if (!isLoggined) {
             toast.error("Please login to continue");
             return;
+        }else{
+
         }
 
         try {
-            const res = await fetch(`${API_URL}/cart/add`, {
+            const res = await fetch(`${API_URL}/cart/${user.id}`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -56,7 +58,6 @@ export default function ViewProduct() {
         }
     };
 
-    /* ---------------- BUY NOW ---------------- */
     const buynow = () => {
         if (!isLoggined) {
             toast.error("Please login to continue");
@@ -158,7 +159,7 @@ export default function ViewProduct() {
                 <p>{product.detailedDescription}</p>
             </div>
 
-            <SimilarProd category={product.category} />
+            <SimilarProd category={product.category} currentProduct={product._id} />
         </div>
     );
 }

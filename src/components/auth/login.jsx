@@ -4,13 +4,12 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function login({ handleAuthType }) {
-  const API_URL = "https://my-ecomm-json-server.onrender.com";
+  const API_URL = "http://localhost:2000/api";
   const navigate = useNavigate();
   const [enteredCred, setenteredCred] = useState({
     email: "",
     password: "",
   });
-  const [userCred, setUserCred] = useState({});
 
   const handleChange = (event) => {
     setenteredCred((prev) => ({
@@ -20,23 +19,22 @@ export default function login({ handleAuthType }) {
   };
 
   const onSubmit = () => {
-    fetch(`${API_URL}/users?email=${enteredCred.email}`)
+    fetch(`${API_URL}/user/login`,{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(enteredCred),
+    })
       .then((res) => res.json())
       .then((res) => {
-        if (res.length > 0) {
-          let fetchedId = res[0];
-          if (fetchedId.password === enteredCred.password) {
-            setUserCred(fetchedId);
-            localStorage.setItem("user", JSON.stringify(fetchedId));
-            alert("Login Successfull");
-            navigate("/products");
-            window.location.reload();
-          } else {
-            alert("Wrong password!");
-          }
-        } else alert("No user Found");
+        if(res.message === "success"){
+          localStorage.setItem("user", JSON.stringify(res.user));
+          alert("Login Successful");
+          navigate("/products");
+          window.location.reload();
+        }
       });
-    console.log(userCred, "userCred");
     console.log(enteredCred, "EnteredCred");
   };
 

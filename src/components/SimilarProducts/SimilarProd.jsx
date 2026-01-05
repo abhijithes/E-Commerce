@@ -4,7 +4,7 @@ import "./SimilarProd.css";
 
 const API_URL = "http://localhost:2000/api";
 
-export default function SimilarProd({ category }) {
+export default function SimilarProd({ category, currentProduct }) {
     const [similarProd, setSimilarProd] = useState([]);
 
     useEffect(() => {
@@ -18,7 +18,10 @@ export default function SimilarProd({ category }) {
                 const data = await res.json();
 
                 if (data.success) {
-                    setSimilarProd(data.data);
+                    const productsExcludingCurrent = data.data.filter(
+                        (prod) => prod._id !== currentProduct
+                    );
+                    setSimilarProd(productsExcludingCurrent);
                 }
             } catch (err) {
                 console.error("Fetch similar products error:", err);
