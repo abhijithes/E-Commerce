@@ -4,8 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import SimilarProd from "../../components/SimilarProducts/SimilarProd";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-const API_URL = "http://localhost:2000/api";
+import { API_URL } from "../../constants";
 
 export default function ViewProduct() {
     const navigate = useNavigate();

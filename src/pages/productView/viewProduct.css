@@ -108,9 +108,15 @@
 .product-details .operations{
     width: 100%;
 }
+.operations{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 .operations .addtocart{
     width: 100%;
     display: flex;
+    gap: 8px;
     justify-content: space-between;
     align-items: center;
 }
@@ -118,6 +124,7 @@
     display: flex;
     align-items: center;
     width: 30%;
+    height: 40px;
 }
 .operations .addtocart .select-count button{
     background-color: rgba(0, 0, 0, 0);

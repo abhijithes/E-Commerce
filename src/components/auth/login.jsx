@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import "./auth.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { API_URL } from "../../constants";
 
 export default function login({ handleAuthType }) {
-  const API_URL = "http://localhost:2000/api";
   const navigate = useNavigate();
   const [enteredCred, setenteredCred] = useState({
     email: "",

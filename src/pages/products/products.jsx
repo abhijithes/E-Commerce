@@ -2,8 +2,10 @@ import React, { useEffect, useState, useRef } from "react";
 import "./products.css";
 import Card from "./card";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { API_URL } from "../../constants";
 
-const API_URL = "http://localhost:2000/api";
+// const API_URL = "https://eluxo-ecom-backend.onrender.com/api";
+// const API_URL = "http://localhost:2000/api";
 
 export default function Products() {
     const [page, setPage] = useState(1);

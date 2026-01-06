@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./auth.css";
 import { useNavigate } from "react-router-dom";
+import { API_URL } from "../../constants";
 
 export default function SignUp({ handleAuthType }) {
-    const API_URL = "http://localhost:2000/api";
     const [userData, setUserData] = useState({});
     const navigate = useNavigate();
     const handleChange = (event) => {

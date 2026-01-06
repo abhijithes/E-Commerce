@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./list.css";
+import { API_URL } from "../../constants";
 
 export default function list() {
   const navigate = useNavigate();
-  const API_URL = "http://localhost:2000/api";
   const [bestProd, setBestProd] = useState([]);
   const scrollDiv = useRef();
   useEffect(() => {

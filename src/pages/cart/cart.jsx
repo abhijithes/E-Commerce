@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./cart.css";
+import { API_URL } from "../../constants";
 
 export default function Cart() {
-  const API_URL = "http://localhost:2000/api";
   const navigate = useNavigate();
 
   const [cart, setCart] = useState(null);

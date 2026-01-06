@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "../../pages/products/card";
 import "./SimilarProd.css";
-
-const API_URL = "http://localhost:2000/api";
+import { API_URL } from "../../constants";
 
 export default function SimilarProd({ category, currentProduct }) {
     const [similarProd, setSimilarProd] = useState([]);
